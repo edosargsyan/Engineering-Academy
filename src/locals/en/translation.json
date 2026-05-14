@@ -1,0 +1,42 @@
+{
+  "subtitle": "Multidisciplinary Engineering Education",
+  "title": "Engineering Disciplines",
+  "description": "Master the complete spectrum of modern engineering — from software and electronics to robotics, AI, and advanced hardware systems.",
+  "explore": "Explore Program",
+  "overview": "Detailed Program Overview",
+  "about": "About the Program",
+  "technologies": "Key Technologies",
+  "close": "Close",
+
+  "software_title": "Software Engineering",
+  "software_desc": "Full-stack systems, backend architecture, cloud infrastructure, AI systems, and distributed computing at scale.",
+  "software_details": "In this program, you will explore scalable system design, database management, microservices architecture, and modern frameworks.",
+
+  "electrical_title": "Electrical Engineering",
+  "electrical_desc": "Analog & digital electronics, PCB design, signal processing, power systems, and circuit architecture.",
+  "electrical_details": "This program covers the complete lifecycle of electronics creation: from circuit simulation in SPICE to multi-layer PCB routing.",
+
+  "mechanical_title": "Mechanical Engineering",
+  "mechanical_desc": "CAD systems, robotics mechanics, manufacturing, thermodynamics, and aerospace engineering principles.",
+  "mechanical_details": "Master the principles of mechanism design, Finite Element Analysis (FEA), thermodynamics, and modern manufacturing methods.",
+
+  "embedded_title": "Embedded & Hardware",
+  "embedded_desc": "STM32, microcontrollers, FPGA systems, IoT devices, firmware development, and sensor integration.",
+  "embedded_details": "Dive into bare-metal microcontroller programming in C/C++, work with Real-Time Operating Systems (RTOS), and design custom FPGA architectures.",
+
+  "robotics_title": "Robotics Engineering",
+  "robotics_desc": "Autonomous systems, motion control, computer vision, sensor fusion, and AI-powered robotics.",
+  "robotics_details": "Learn how to bring machines to life. The program includes studying the Robot Operating System (ROS), kinematics, and processing data.",
+
+  "ai_title": "AI Engineering",
+  "ai_desc": "Machine learning, deep learning, LLMs, computer vision, NLP, and production AI systems.",
+  "ai_details": "Master neural network training architectures, work extensively with Large Language Models (LLMs) and computer vision.",
+
+  "systems_title": "Systems Engineering",
+  "systems_desc": "Complex system design, integration, architecture, verification, and large-scale engineering projects.",
+  "systems_details": "Learn to see the big picture: from comprehensive requirements management to cross-disciplinary subsystem integration.",
+
+  "hardware_title": "Hardware Engineering",
+  "hardware_desc": "Custom silicon design, hardware prototyping, manufacturing, testing, and product engineering.",
+  "hardware_details": "Take projects from concept to finished device. Design custom silicon (ASIC), create rapid hardware prototypes, and conduct rigorous testing."
+}
