@@ -487,45 +487,25 @@ export const courseDetails = {
     ],
     modules: [
       {
-        title: "Module 1 — Boolean Algebra & Logic Gates",
+        title: "Core Modules",
         topics: [
-          "Number Systems (Binary, Hex, Octal)",
-          "Basic Logic Gates (AND, OR, NOT, XOR, NAND, NOR)",
-          "Boolean Theorems and De Morgan's Laws",
-          "Simplification using Karnaugh Maps (K-Maps)",
-          "Universal Logic Gate Implementations",
+          "Number Systems and Codes",
+          "Boolean Algebra",
+          "Karnaugh Maps and Function Simplification",
+          "Combinational Logic Design Principles",
+          "Combinational Logic Design with MSI Circuits",
+          "Latches and Flip-Flops",
+          "Counters and Registers",
+          "Clock-Driven Sequential Circuits",
+          "Event-Driven Circuits",
+          "Instrumentation and Interfacing",
+          "Programmable Logic Devices",
+          "Arithmetic Circuits",
+          "Fault Diagnosis and Testing",
         ],
       },
-      {
-        title: "Module 2 — Combinational Logic Circuits",
-        topics: [
-          "Half Adders and Full Adders",
-          "Multiplexers (MUX) and Demultiplexers",
-          "Encoders and Decoders",
-          "Comparators and Parity Generators",
-          "Arithmetic Logic Unit (ALU) Basics",
-        ],
-      },
-      {
-        title: "Module 3 — Sequential Logic",
-        topics: [
-          "Latches (SR, D)",
-          "Flip-Flops (D, JK, T) and Edge-Triggering",
-          "Shift Registers (SISO, SIPO, PISO, PIPO)",
-          "Synchronous and Asynchronous Counters",
-          "Clocking and Timing Constraints Basics",
-        ],
-      },
-      {
-        title: "Module 4 — Finite State Machines & Memory",
-        topics: [
-          "Moore and Mealy State Machines",
-          "State Diagrams and State Reduction",
-          "Memory Organization (ROM, RAM)",
-          "Programmable Logic Devices (PLDs)",
-          "Digital Logic Capstone Design",
-        ],
-      },
+   
+   
     ],
   },
   "FPGA Engineering": {

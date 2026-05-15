@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Send, MessageCircle } from "lucide-react";
+import { Send, MessageCircle, Phone } from "lucide-react"; // Добавил иконку Phone для WhatsApp
 import { useTranslation } from "react-i18next"; 
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
@@ -32,13 +32,24 @@ export function ContactForm() {
             viewport={{ once: true }}
             className="bg-white/60 backdrop-blur-xl border border-gray-200 rounded-3xl p-10 shadow-lg"
           >
-            <form className="space-y-6">
+            {/* 
+              ВНИМАНИЕ: Чтобы форма работала без бэкенда, зарегистрируйся на https://formspree.io/,
+              создай новую форму и вставь полученную ссылку в атрибут action ниже.
+              Пример: action="https://formspree.io/f/xdoqbqee"
+            */}
+            <form 
+              action="https://formspree.io/f/ТВОЙ_КОД_ЗДЕСЬ" 
+              method="POST" 
+              className="space-y-6"
+            >
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   {t('contact_name_label')}
                 </label>
                 <input
                   type="text"
+                  name="name" // Обязательно для Formspree
+                  required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder={t('contact_name_placeholder')}
                 />
@@ -49,6 +60,8 @@ export function ContactForm() {
                 </label>
                 <input
                   type="email"
+                  name="email" // Обязательно для Formspree
+                  required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder={t('contact_email_placeholder')}
                 />
@@ -58,7 +71,9 @@ export function ContactForm() {
                   {t('contact_goals_label')}
                 </label>
                 <textarea
+                  name="message" // Обязательно для Formspree
                   rows={4}
+                  required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
                   placeholder={t('contact_goals_placeholder')}
                 />
@@ -84,18 +99,32 @@ export function ContactForm() {
               >
                 {t('contact_google_btn')}
               </a>
-              <div className="text-center text-sm text-gray-600 mb-4">
+              
+              <div className="text-center text-sm text-gray-600 mb-4 mt-6">
                 {t('contact_or_direct')}
               </div>
-              <div className="flex justify-center space-x-4">
-                <button className="px-6 py-3 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all flex items-center space-x-2">
-                  <MessageCircle className="w-4 h-4" />
+              
+              {/* Исправленные кнопки мессенджеров (теперь это ссылки) */}
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a 
+                  href="https://t.me/ТВОЙ_НИК_В_ТЕЛЕГРАМ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-[#0088cc] text-white rounded-xl hover:bg-[#0077b3] transition-all flex items-center justify-center space-x-2 w-full sm:w-auto"
+                >
+                  <MessageCircle className="w-5 h-5" />
                   <span>{t('contact_telegram')}</span>
-                </button>
-                <button className="px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-all flex items-center space-x-2">
-                  <MessageCircle className="w-4 h-4" />
+                </a>
+                
+                <a 
+                  href="https://wa.me/ТВОЙ_НОМЕР_ТЕЛЕФОНА" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-[#25D366] text-white rounded-xl hover:bg-[#20bd5a] transition-all flex items-center justify-center space-x-2 w-full sm:w-auto"
+                >
+                  <Phone className="w-5 h-5" />
                   <span>{t('contact_whatsapp')}</span>
-                </button>
+                </a>
               </div>
             </div>
           </motion.div>
