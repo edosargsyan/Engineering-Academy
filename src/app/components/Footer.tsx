@@ -19,6 +19,7 @@ export function Footer() {
             <div className="flex items-center space-x-4 text-gray-600">
               <MapPin className="w-5 h-5" />
               <span>Komitas 59</span>
+              <span>Bagrevand 21</span>
             </div>
             <div className="flex items-center space-x-4 text-gray-600 mt-3">
               <Mail className="w-5 h-5" />
