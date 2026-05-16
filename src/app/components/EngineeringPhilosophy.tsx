@@ -34,7 +34,6 @@ export function EngineeringPhilosophy() {
 
   return (
     <section className="py-32 px-6 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
-      {/* Technical grid overlay */}
       <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -46,7 +45,7 @@ export function EngineeringPhilosophy() {
         </svg>
       </div>
 
-      {/* Animated particles */}
+   
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div

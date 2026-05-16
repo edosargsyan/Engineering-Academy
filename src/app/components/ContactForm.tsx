@@ -32,11 +32,7 @@ export function ContactForm() {
             viewport={{ once: true }}
             className="bg-white/60 backdrop-blur-xl border border-gray-200 rounded-3xl p-10 shadow-lg"
           >
-            {/* 
-              ВНИМАНИЕ: Чтобы форма работала без бэкенда, зарегистрируйся на https://formspree.io/,
-              создай новую форму и вставь полученную ссылку в атрибут action ниже.
-              Пример: action="https://formspree.io/f/xdoqbqee"
-            */}
+           
             <form 
               action="https://formspree.io/f/ТВОЙ_КОД_ЗДЕСЬ" 
               method="POST" 
@@ -48,7 +44,7 @@ export function ContactForm() {
                 </label>
                 <input
                   type="text"
-                  name="name" // Обязательно для Formspree
+                  name="name" 
                   required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder={t('contact_name_placeholder')}
@@ -60,7 +56,7 @@ export function ContactForm() {
                 </label>
                 <input
                   type="email"
-                  name="email" // Обязательно для Formspree
+                  name="email" 
                   required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                   placeholder={t('contact_email_placeholder')}
@@ -71,7 +67,7 @@ export function ContactForm() {
                   {t('contact_goals_label')}
                 </label>
                 <textarea
-                  name="message" // Обязательно для Formspree
+                  name="message" 
                   rows={4}
                   required
                   className="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
@@ -104,7 +100,7 @@ export function ContactForm() {
                 {t('contact_or_direct')}
               </div>
               
-              {/* Исправленные кнопки мессенджеров (теперь это ссылки) */}
+           
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a 
                   href="https://t.me/ТВОЙ_НИК_В_ТЕЛЕГРАМ" 

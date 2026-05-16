@@ -45,7 +45,6 @@ export function Hero() {
             className="relative"
           >
             <div className="relative aspect-square">
-              {/* Circuit board pattern background */}
               <div className="absolute inset-0 opacity-10">
                 <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                   <defs>

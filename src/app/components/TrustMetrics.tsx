@@ -8,7 +8,6 @@ export function TrustMetrics() {
     { value: "150+", key: "metric_engineers" },
     { value: "8", key: "metric_disciplines" },
     { value: "50+", key: "metric_projects" },
-    // { value: "92%", key: "metric_placement" },
   ];
 
   return (
