@@ -14,9 +14,9 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
           >
-            <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               {t('hero_title_1')}
               <br />
               {t('hero_title_2')}
@@ -41,7 +41,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="relative"
           >
             <div className="relative aspect-square">

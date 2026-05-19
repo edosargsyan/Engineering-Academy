@@ -1,9 +1,10 @@
 import { Mail, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next"; 
-import EngineeringAcademyLogo from "./Navbar";
+import {EngineeringAcademyLogo} from "./Navbar";
 
 export function Footer() {
   const { t } = useTranslation(); 
+  const email = "info@engineeringacademy.tech"
 
   return (
     <footer className="py-16 px-6 border-t border-gray-200">
@@ -18,12 +19,11 @@ export function Footer() {
             </p>
             <div className="flex items-center space-x-4 text-gray-600">
               <MapPin className="w-5 h-5" />
-              <span>Komitas 59</span>
               <span>Bagrevand 21</span>
             </div>
             <div className="flex items-center space-x-4 text-gray-600 mt-3">
               <Mail className="w-5 h-5" />
-              <span>hello@engineering-academy.com</span>
+              <span>{email}</span>
             </div>
           </div>
           <div className="flex justify-end">

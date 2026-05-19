@@ -36,7 +36,7 @@ export function About() {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.5 }}
             >
               <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-8">
                 {t('about_title')}

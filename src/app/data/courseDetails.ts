@@ -27,7 +27,7 @@ export const courseDetails = {
       },
       {
         title: "Module 2 — Core Mastery",
-       topics: [
+        topics: [
           "JavaScript Foundations & Memory Management",
           "Functions, Lexical Scope, and Closures",
           "Higher-Order Functions & Array Iterations",
@@ -52,7 +52,7 @@ export const courseDetails = {
       },
       {
         title: "Module 4 — Backend",
-      topics: [
+        topics: [
           "Introduction to Node.js",
           "Node.js Modules and the npm Ecosystem",
           "Network Protocols Fundamentals",
@@ -74,7 +74,6 @@ export const courseDetails = {
           "Automating Deployment with CI/CD Pipelines",
         ],
       },
-    
     ],
   },
   
@@ -146,6 +145,7 @@ export const courseDetails = {
       },
     ],
   },
+  
   "Embedded Systems": {
     title: "Embedded Systems",
     duration: "18 Weeks",
@@ -229,6 +229,7 @@ export const courseDetails = {
       },
     ],
   },
+  
   "AI Engineering": {
     title: "AI Engineering",
     duration: "12-14 months",
@@ -291,6 +292,7 @@ export const courseDetails = {
       },
     ],
   },
+  
   "Software Engineering": {
     title: "Software Engineering",
     duration: "9 months",
@@ -348,6 +350,7 @@ export const courseDetails = {
       },
     ],
   },
+  
   "Mechanical Engineering": {
     title: "Mechanical Engineering",
     duration: "12-15 Weeks",
@@ -405,6 +408,7 @@ export const courseDetails = {
       },
     ],
   },
+  
   "Microcontroller Fundamentals": {
     title: "Microcontroller Fundamentals",
     duration: "14-16 Weeks",
@@ -422,7 +426,7 @@ export const courseDetails = {
     modules: [
       {
         title: "Core Module",
-      topics: [
+        topics: [
           "Fundamentals of Microcontrollers & Digital Logic",
           "Embedded C Programming & Memory Architecture",
           "Core Peripherals: GPIO, Timers, and Interrupts",
@@ -433,9 +437,9 @@ export const courseDetails = {
           "Debugging, Optimization, and Capstone Project",
         ],
       },
-      
     ],
   },
+  
   "Electrical Engineering": {
     title: "Electrical Engineering",
     duration: "8 months",
@@ -453,7 +457,7 @@ export const courseDetails = {
     modules: [
       {
         title: "Core Modules",
-      topics: [
+        topics: [
           "Fundamentals of Electrical Engineering",
           "Advanced Circuit Analysis",
           "Analog and Digital Electronics",
@@ -466,11 +470,9 @@ export const courseDetails = {
           "Renewable Energy and High Voltage Systems",
         ],
       },
-      
-     
-     
     ],
   },
+  
   "Digital Logic Design": {
     title: "Digital Logic Design",
     duration: "12 Weeks",
@@ -504,10 +506,9 @@ export const courseDetails = {
           "Fault Diagnosis and Testing",
         ],
       },
-   
-   
     ],
   },
+  
   "FPGA Engineering": {
     title: "FPGA Engineering",
     duration: "2 months",
@@ -525,7 +526,7 @@ export const courseDetails = {
     modules: [
       {
         title: "Core Modules",
-       topics: [
+        topics: [
           "Fundamentals of Digital Logic Design",
           "Boolean Algebra and Logic Gates",
           "Combinational Logic Circuits",
@@ -540,9 +541,9 @@ export const courseDetails = {
           "FPGA System-on-Chip (SoC) Design",
         ],
       },
-    
     ],
   },
+  
   "Hardware Engineering": {
     title: "Hardware Engineering",
     duration: "16 Weeks",
@@ -600,4 +601,175 @@ export const courseDetails = {
       },
     ],
   },
+
+  "Mathematics": {
+    title: "Mathematics",
+    duration: "6 months",
+    level: "Beginner to Advanced",
+    technologies: ["Calculus", "Linear Algebra", "Probability", "Discrete Math"],
+    description: "Build a rigorous mathematical foundation encompassing calculus, linear algebra, and discrete mathematics, tailored for complex engineering and algorithm design.",
+    outcomes: [
+      "Solve advanced limits, derivatives, and integral calculus problems",
+      "Perform matrix operations and solve systems of linear equations",
+      "Apply principles of analytic geometry to multidimensional spaces",
+      "Utilize series analysis for continuous functions",
+      "Understand probability and statistical modeling for engineering applications",
+    ],
+    modules: [
+      {
+        title: "Module 1 — Calculus & Series Analysis",
+        topics: [
+          "Limits and Continuity",
+          "Differential Calculus and Applications",
+          "Integral Calculus and Techniques of Integration",
+          "Infinite Series and Convergence Tests",
+          "Taylor and Maclaurin Series",
+        ],
+      },
+      {
+        title: "Module 2 — Linear Algebra",
+        topics: [
+          "Vectors and Vector Spaces",
+          "Matrix Algebra and Operations",
+          "Determinants and Inverses",
+          "Systems of Linear Equations",
+          "Eigenvalues and Eigenvectors",
+        ],
+      },
+      {
+        title: "Module 3 — Analytic Geometry",
+        topics: [
+          "Coordinate Systems in 2D and 3D",
+          "Lines, Planes, and Surfaces in Space",
+          "Conic Sections and Quadric Surfaces",
+          "Vector Functions and Space Curves",
+        ],
+      },
+      {
+        title: "Module 4 — Discrete Math & Probability",
+        topics: [
+          "Logic and Propositional Calculus",
+          "Set Theory and Combinatorics",
+          "Graph Theory Foundations",
+          "Probability Distributions",
+          "Statistical Inference",
+        ],
+      },
+    ],
+  },
+
+  "Physics": {
+    title: "Physics",
+    duration: "6 months",
+    level: "Intermediate",
+    technologies: ["Mechanics", "Electromagnetism", "Thermodynamics", "Optics"],
+    description: "Explore the fundamental laws of nature, focusing on core engineering physics including electrostatics, thermodynamics, and classical mechanics.",
+    outcomes: [
+      "Analyze rotational dynamics and Newtonian mechanics",
+      "Apply the laws of thermodynamics and gas behavior",
+      "Calculate electric field potentials and analyze circuits",
+      "Understand fundamental concepts of magnetism and optics",
+      "Solve real-world engineering physics problems mathematically",
+    ],
+    modules: [
+      {
+        title: "Module 1 — Classical Mechanics",
+        topics: [
+          "Kinematics in One and Two Dimensions",
+          "Newton's Laws of Motion",
+          "Work, Energy, and Power",
+          "Momentum and Collisions",
+          "Rotational Dynamics and Angular Momentum",
+        ],
+      },
+      {
+        title: "Module 2 — Thermodynamics",
+        topics: [
+          "Temperature and Heat",
+          "The Ideal Gas Law and Kinetic Theory",
+          "The First Law of Thermodynamics",
+          "The Second Law of Thermodynamics and Entropy",
+          "Heat Engines and Refrigerators",
+        ],
+      },
+      {
+        title: "Module 3 — Electromagnetism",
+        topics: [
+          "Electric Charge and Electric Field",
+          "Gauss's Law and Electric Potential",
+          "Capacitance and Dielectrics",
+          "Current, Resistance, and DC Circuits",
+          "Magnetic Fields and Forces",
+        ],
+      },
+      {
+        title: "Module 4 — Waves and Modern Physics",
+        topics: [
+          "Oscillatory Motion and Waves",
+          "Sound and Acoustics",
+          "Geometric and Physical Optics",
+          "Introduction to Quantum Physics",
+          "Atomic and Nuclear Physics Basics",
+        ],
+      },
+    ],
+  },
+
+"Mobile Development": {
+  title: "Mobile Development",
+  duration: "6-8 months",
+  level: "Intermediate",
+  technologies: ["Flutter", "Dart", "Firebase", "BLoC/Riverpod"],
+  description: "Become an expert in cross-platform development. Deep dive into Flutter and Dart to build high-performance iOS and Android applications with a single codebase.",
+  outcomes: [
+    "Professional proficiency in the Dart programming language",
+    "Building complex UIs using Flutter Widgets",
+    "Implementing architectural patterns (BLoC, Riverpod, Clean Architecture)",
+    "Integrating with backends and cloud services (Firebase, REST APIs)",
+    "Working with local databases and caching mechanisms",
+    "Publishing applications to Google Play and the App Store",
+  ],
+  modules: [
+    {
+      title: "Module 1 — Dart Essentials",
+      topics: [
+        "Syntax fundamentals and data types",
+        "OOP in Dart: classes, mixins, and interfaces",
+        "Asynchronous programming (Future, Stream)",
+        "Collections and functional programming",
+        "Dependency management in pubspec.yaml",
+      ],
+    },
+    {
+      title: "Module 2 — Flutter UI & Layout",
+      topics: [
+        "Anatomy of a Flutter application (Widget Tree)",
+        "Working with Layout widgets (Row, Column, Stack, ListView)",
+        "Styling and theming (Material Design & Cupertino)",
+        "Animations and transitions",
+        "Creating custom widgets",
+      ],
+    },
+    {
+      title: "Module 3 — Architecture & State Management",
+      topics: [
+        "State management challenges in Flutter",
+        "Patterns: Provider, Riverpod, BLoC",
+        "Clean Architecture in mobile applications",
+        "Dependency Injection (get_it)",
+        "Business logic testing",
+      ],
+    },
+    {
+      title: "Module 4 — Backend & Data",
+      topics: [
+        "Working with HTTP requests (Dio, JSON serialization)",
+        "Local storage (SQLite, Hive, Shared Preferences)",
+        "Integration with Firebase (Auth, Firestore, Cloud Functions)",
+        "Working with native platform features (Method Channels)",
+        "CI/CD for mobile apps and store releases",
+      ],
+    },
+  ],
+},
 };

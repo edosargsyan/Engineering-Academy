@@ -12,7 +12,10 @@ import {
   Binary, 
   Boxes, 
   CircuitBoard,
-  X 
+  X,
+  Sigma,
+  Atom,
+  Smartphone
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Navbar } from "./Navbar";
@@ -108,6 +111,27 @@ export function EngineeringDisciplines() {
       color: "from-red-500 to-rose-600",
       tags: ["Altium Designer", "High-Speed PCB", "EMI/EMC", "DFM"],
     },
+    {
+      id: "math",
+      dataKey: "Mathematics",
+      icon: Sigma,
+      color: "from-blue-600 to-indigo-700",
+      tags: ["Calculus", "Linear Algebra", "Probability", "Discrete Math"],
+    },
+    {
+      id: "physics",
+      dataKey: "Physics",
+      icon: Atom,
+      color: "from-sky-500 to-blue-600",
+      tags: ["Mechanics", "Thermodynamics", "Optics", "Electromagnetism"],
+    },
+    {
+      id: "mobile",
+      dataKey: "Mobile Development",
+      icon: Smartphone,
+      color: "from-violet-500 to-purple-600",
+      tags: ["Flutter", "Dart", "BLoC", "Clean Architecture"],
+    }
   ];
 
   if (typeof document !== 'undefined') {

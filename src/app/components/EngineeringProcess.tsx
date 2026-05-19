@@ -53,7 +53,8 @@ export function EngineeringProcess() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="relative flex items-start space-x-6 group"
+              className="relative flex items-start space-x-6 group "
+              
             >
               <div className="flex-shrink-0 relative z-10">
                 <div className="w-16 h-16 bg-white border-2 border-gray-200 rounded-2xl flex items-center justify-center group-hover:border-blue-500 group-hover:shadow-lg transition-all">

@@ -10,6 +10,15 @@ const resources = {
       "nav_projects": "Projects",
       "nav_contact": "Contact",
       "nav_apply": "Apply Now",
+      "course_physics_title": "Physics",
+  "course_physics_dur": "6 months",
+  "course_physics_desc": "Classical mechanics, thermodynamics, electromagnetism, and wave optics as a base for physical system design.",
+  "course_math_title": "Mathematics",
+  "course_math_dur": "6 months",
+  "course_math_desc": "Calculus, linear algebra, probability theory, and discrete mathematics for complex engineering calculations.",
+  "course_mobile_title": "Mobile Development",
+  "course_mobile_dur": "6-8 months",
+  "course_mobile_desc": "Cross-platform development with Flutter: from high-performance UI creation to deep backend integration.",
       "footer_desc": "A premier multidisciplinary engineering institution preparing the next generation of software, hardware, robotics, and AI engineers.",
       "footer_location": "San Francisco, CA",
       "footer_rights": "© 2026 Engineering Academy. All rights reserved.",
@@ -42,6 +51,9 @@ const resources = {
       "phil_btn_apply": "Apply Now",
       "phil_btn_download": "Download Curriculum",
       "prin_think_title": "Think Like Engineers",
+      "math_title": "Mathematics",
+    "math_desc": "Calculus, linear algebra, probability theory, and discrete mathematics for complex engineering calculations.",
+    "math_details": "Build a rigorous foundation for algorithms and modeling: from analysis basics to solving applied engineering and AI problems.",
       "prin_think_desc": "Develop systematic problem-solving, critical thinking, and first-principles reasoning.",
       "prin_build_title": "Build Production Systems",
       "prin_build_desc": "Create real-world solutions that meet industrial standards and professional requirements.",
@@ -189,6 +201,8 @@ const resources = {
       "proj_monitor_cat": "Systems Engineering",
       "proj_fpga_title": "Custom FPGA Processor",
       "proj_fpga_cat": "Hardware Engineering",
+
+
       "proj_arm_title": "Robotic Arm Controller",
       "proj_arm_cat": "Mechanical + Software",
       "proj_hub_title": "Smart Home Hub",
@@ -236,6 +250,12 @@ const resources = {
       "nav_projects": "Проекты",
       "nav_contact": "Контакты",
       "nav_apply": "Подать заявку",
+      "course_physics_title": "Физика",
+  "course_physics_dur": "6 месяцев",
+  "course_physics_desc": "Классическая механика, термодинамика, электромагнетизм и волновая оптика как база для проектирования физических систем.",
+  "course_mobile_title": "Мобильная разработка",
+  "course_mobile_dur": "6-8 месяцев",
+  "course_mobile_desc": "Кроссплатформенная разработка на Flutter: от создания высокопроизводительных UI...",
       "footer_desc": "Ведущее многопрофильное инженерное учебное заведение, готовящее новое поколение инженеров в сфере ПО, аппаратного обеспечения, робототехники и ИИ.",
       "footer_location": "Сан-Франциско, Калифорния",
       "footer_rights": "© 2026 Инженерная Академия. Все права защищены.",
@@ -451,7 +471,20 @@ const resources = {
       "systems_details": "Научитесь видеть общую картину: от комплексного управления требованиями до интеграции междисциплинарных подсистем.",
       "hardware_title": "Аппаратная инженерия",
       "hardware_desc": "Проектирование пользовательских чипов, прототипирование оборудования, производство и тестирование.",
-      "hardware_details": "Пройдите путь от концепции до готового устройства. Проектируйте ASIC, создавайте аппаратные прототипы и проводите тестирование."
+      "hardware_details": "Пройдите путь от концепции до готового устройства. Проектируйте ASIC, создавайте аппаратные прототипы и проводите тестирование.",
+
+
+"math_title": "Математика",
+  "math_desc": "Математический анализ, линейная алгебра, теория вероятностей и дискретная математика для сложных инженерных вычислений.",
+  "math_details": "Постройте фундамент для алгоритмов и моделирования: от основ анализа до решения прикладных задач в области инженерии и ИИ.",
+
+  "physics_title": "Физика",
+  "physics_desc": "Классическая механика, термодинамика, электромагнетизм и волновая оптика как база для проектирования физических систем.",
+  "physics_details": "Изучите фундаментальные законы природы и научитесь моделировать физические процессы, необходимые для решения инженерных задач.",
+
+  "mobile_title": "Мобильная разработка",
+  "mobile_desc": "Кроссплатформенная разработка на Flutter: от создания высокопроизводительных UI до глубокой интеграции с бэкендом и системными функциями.",
+  "mobile_details": "Станьте экспертом в разработке мобильных приложений уровня Enterprise, освоив архитектуру, управление состоянием и современные инструменты CI/CD."
     }
   },
   hy: {
@@ -460,6 +493,17 @@ const resources = {
       "nav_about": "Մեր մասին",
       "nav_programs": "Ծրագրեր",
       "nav_projects": "Նախագծեր",
+      
+  "course_physics_title": "Ֆիզիկա",
+  "course_physics_dur": "6 ամիս",
+  "course_physics_desc": "Դասական մեխանիկա, թերմոդինամիկա, էլեկտրամագնիսականություն և օպտիկա՝ որպես ֆիզիկական համակարգերի նախագծման հիմք:",
+  "course_math_title": "Մաթեմատիկա",
+  "course_math_dur": "6 ամիս",
+  "course_math_desc": "Մաթեմատիկական անալիզ, գծային հանրահաշիվ, հավանականությունների տեսություն և դիսկրետ մաթեմատիկա՝ բարդ ինժեներական հաշվարկների համար:",
+  "course_mobile_title": "Մոբայլ Ծրագրավորում",
+  "course_mobile_dur": "6-8 ամիս",
+  "course_mobile_desc": "Կրոս-պլատֆորմային մշակում Flutter-ով. բարձր արտադրողականություն ունեցող UI-ի ստեղծումից մինչև բեքենդի և համակարգային գործառույթների խորը ինտեգրում:",
+
       "nav_contact": "Կապ",
       "nav_apply": "Դիմել հիմա",
       "footer_desc": "Առաջատար բազմամասնագիտական ինժեներական հաստատություն, որը պատրաստում է ծրագրային ապահովման, ապարատային, ռոբոտաշինության և ԱԲ ինժեներների նոր սերունդ:",
@@ -677,7 +721,21 @@ const resources = {
       "systems_details": "Սովորեք տեսնել մեծ պատկերը՝ պահանջների համապարփակ կառավարումից մինչև ենթահամակարգերի ինտեգրում:",
       "hardware_title": "Ապարատային ճարտարագիտություն",
       "hardware_desc": "Պատվերով չիպերի նախագծում, ապարատային նախատիպեր, արտադրություն, փորձարկում և արտադրանքի ինժեներիա:",
-      "hardware_details": "Անցեք հայեցակարգից մինչև պատրաստի սարք: Նախագծեք պատվերով սիլիցիում (ASIC), ստեղծեք նախատիպեր և անցկացրեք փորձարկումներ:"
+      "hardware_details": "Անցեք հայեցակարգից մինչև պատրաստի սարք: Նախագծեք պատվերով սիլիցիում (ASIC), ստեղծեք նախատիպեր և անցկացրեք փորձարկումներ:",
+     "math_title": "Մաթեմատիկա",
+  "math_desc": "Մաթեմատիկական անալիզ, գծային հանրահաշիվ, հավանականությունների տեսություն և դիսկրետ մաթեմատիկա՝ բարդ ինժեներական հաշվարկների համար:",
+  "math_details": "Կառուցեք ամուր հիմք ալգորիթմների և մոդելավորման համար՝ անալիզի հիմունքներից մինչև ինժեներական և AI խնդիրների լուծում:",
+
+  "physics_title": "Ֆիզիկա",
+  "physics_desc": "Դասական մեխանիկա, թերմոդինամիկա, էլեկտրամագնիսականություն և օպտիկա՝ որպես ֆիզիկական համակարգերի նախագծման հիմք:",
+  "physics_details": "Ուսումնասիրեք բնության հիմնարար օրենքները և սովորեք մոդելավորել ֆիզիկական պրոցեսներ, որոնք անհրաժեշտ են ինժեներական խնդիրների լուծման համար:",
+
+  "mobile_title": "Բջջային մշակում",
+  "mobile_desc": "Կրոս-պլատֆորմային մշակում Flutter-ով. բարձր արտադրողականություն ունեցող UI-ի ստեղծումից մինչև բեքենդի և համակարգային գործառույթների խորը ինտեգրում:",
+  "mobile_details": "Դարձեք Enterprise մակարդակի բջջային հավելվածների մշակման մասնագետ՝ տիրապետելով ճարտարապետությանը, վիճակի կառավարմանը (State Management) և CI/CD ժամանակակից գործիքներին:",
+
+
+
     }
   }
 };
