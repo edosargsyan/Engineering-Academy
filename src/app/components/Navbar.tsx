@@ -160,7 +160,7 @@ export function Navbar() {
                 aria-expanded={isOpen}
                 aria-label="Переключить меню"
               >
-                {isOpen ? <X className="w-6 h-6 mr-6" /> : <Menu className="w-6 h-6 mr-6" />}
+                {isOpen ? <X className="w-6 h-6 mr-" /> : <Menu className="w-6 h-6 mr-8" />}
               </button>
             </div>
 
