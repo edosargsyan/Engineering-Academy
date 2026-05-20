@@ -2,12 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo1.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>enginereeingacademy-</title>
+    
+    <title>Engineering Academy</title>
+    
+    <meta name="description" content="Обучение инженерным дисциплинам: JavaScript, Embedded Systems, AI Engineering, математика и физика. Станьте востребованным инженером с нуля." />
+    
+    <meta name="keywords" content="инженерная академия, курсы программирования, курсы javascript, embedded systems обучение, ai engineering, курсы физики" />
+    
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://engineeringacademy.tech" />
+    <meta property="og:title" content="Engineering Academy — Курсы Инженерии и Разработки" />
+    <meta property="og:description" content="Обучение инженерным дисциплинам: от веб-разработки до искусственного интеллекта и робототехники." />
+    
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://engineeringacademy.tech" />
+    <meta property="twitter:title" content="Engineering Academy — Курсы Инженерии и Разработки" />
+    <meta property="twitter:description" content="Обучение инженерным дисциплинам: от веб-разработки до искусственного интеллекта и робототехники." />
+    <meta property="twitter:image" content="https://your-domain.com/og-image.jpg" />
+
+    <link rel="canonical" href="https://engineeringacademy.tech" />
+
+    <style>
+      .app-initial-loader {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background-color: #ffffff;
+        font-family: system-ui, -apple-system, sans-serif;
+        z-index: 9999;
+      }
+      .loader-spinner {
+        width: 48px; height: 48px;
+        border: 4px solid #e5e7eb; border-top-color: #111827; border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      .loader-text { margin-top: 16px; font-size: 14px; font-weight: 500; color: #4b5563; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="app-initial-loader">
+        <div class="loader-spinner" aria-hidden="true"></div>
+        <h1 class="loader-text">Engineering Academy</h1>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
