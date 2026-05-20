@@ -41,14 +41,7 @@ export function About() {
     visible: { opacity: 1, x: 0 },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (index: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: index * 0.12, duration: 0.4, ease: "easeOut" }
-    })
-  };
+  
 
   return (
     <>
@@ -93,7 +86,6 @@ export function About() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     custom={index}
-                    variants={cardVariants}
                     className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-5 sm:p-6 hover:shadow-xl hover:border-gray-300 transition-all duration-300 ease-out"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-violet-500 rounded-xl flex items-center justify-center mb-4 shadow-sm">
