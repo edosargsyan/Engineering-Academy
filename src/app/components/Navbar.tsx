@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+
 interface Language {
   code: string;
   name: string;
@@ -18,27 +19,29 @@ const LANGUAGES: Language[] = [
 
 export function EngineeringAcademyLogo() {
   return (
-    <div className="flex items-center gap-3 px-4 py-3 w-fit select-none">
-      <div className="flex gap-[3px]">
-        <div className="flex flex-col gap-[3px]">
-          <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
-          <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
-          <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
+    <Link to="/" className="flex items-center gap-3 px-4 py-3 w-fit select-none">
+      <div className="flex items-center gap-3 w-fit select-none">
+        <div className="flex gap-[3px]">
+          <div className="flex flex-col gap-[3px]">
+            <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
+            <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
+            <div className="w-[26px] h-[8px] bg-[#1d1d1d]" />
+          </div>
+          <div className="flex flex-col">
+            <div className="w-[8px] h-[20px] bg-[#2d5b85]" />
+            <div className="w-[8px] h-[10px] bg-[#1d1d1d]" />
+          </div>
+          <div className="flex flex-col gap-[3px]">
+            <div className="w-[8px] h-[17px] bg-[#1d1d1d]" />
+            <div className="w-[8px] h-[10px] bg-[#1d1d1d]" />
+          </div>
         </div>
-        <div className="flex flex-col">
-          <div className="w-[8px] h-[20px] bg-[#2d5b85]" />
-          <div className="w-[8px] h-[10px] bg-[#1d1d1d]" />
-        </div>
-        <div className="flex flex-col gap-[3px]">
-          <div className="w-[8px] h-[17px] bg-[#1d1d1d]" />
-          <div className="w-[8px] h-[10px] bg-[#1d1d1d]" />
+        <div className="leading-none uppercase tracking-tight font-extrabold text-[#1d1d1d] text-[18px]">
+          <div>Engineering</div>
+          <div className="mt-[2px]">Academy</div>
         </div>
       </div>
-      <div className="leading-none uppercase tracking-tight font-extrabold text-[#1d1d1d] text-[18px]">
-        <div>Engineering</div>
-        <div className="mt-[2px]">Academy</div>
-      </div>
-    </div>
+    </Link>
   );
 }
 
@@ -50,16 +53,15 @@ interface LanguageSwitcherProps {
 
 function LanguageSwitcher({ currentLang, onLanguageChange, isMobile = false }: LanguageSwitcherProps) {
   return (
-    <div 
+    <div
       className={`flex items-center gap-1 p-1 rounded-lg ${
-        isMobile 
-          ? "w-full justify-center gap-3 py-2 bg-gray-50 border border-gray-100" 
+        isMobile
+          ? "w-full justify-center gap-3 py-2 bg-gray-50 border border-gray-100"
           : "bg-gray-50/80 border border-gray-200/60"
       }`}
     >
       {LANGUAGES.map((lang) => {
         const isActive = currentLang.startsWith(lang.code);
-
         return (
           <button
             key={lang.code}
@@ -113,10 +115,10 @@ export function Navbar() {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50"
     >
-      <div className="" >
-        <div className="bg-white/80 backdrop-blur-xl border border-gray-200/50  px-6 py-3 shadow-sm">
+      <div>
+        <div className="bg-white/80 backdrop-blur-xl border border-gray-200/50 px-6 py-3 shadow-sm">
           <div className="flex items-center justify-between">
-            
+
             <div className="flex items-center space-x-12">
               <EngineeringAcademyLogo />
               <div className="hidden md:flex items-center space-x-8">
@@ -139,9 +141,9 @@ export function Navbar() {
 
             <div className="flex items-center space-x-3 md:space-x-4">
               <div className="hidden md:block">
-                <LanguageSwitcher 
-                  currentLang={currentLang} 
-                  onLanguageChange={handleLanguageChange} 
+                <LanguageSwitcher
+                  currentLang={currentLang}
+                  onLanguageChange={handleLanguageChange}
                 />
               </div>
 
@@ -169,47 +171,57 @@ export function Navbar() {
 
         <AnimatePresence>
           {isOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="absolute top-full left-6 right-6 mt-2 md:hidden"
-            >
-              <div className="bg-white border border-gray-200 shadow-xl rounded-2xl p-4 flex flex-col space-y-2 ">
-                {navLinks.map((link) => {
-                  const isActive = location.pathname === link.href;
-                  return (
-                    <Link
-                      key={link.key}
-                      to={link.href}
-                      onClick={() => setIsOpen(false)}
-                      className={`text-base px-3 py-2 rounded-lg transition-all duration-200 ${
-                        isActive ? "text-gray-900 font-bold bg-gray-100" : "font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                      }`}
-                    >
-                      {t(link.key)}
-                    </Link>
-                  );
-                })}
-                
-                <hr className="border-gray-100 my-2" />
-                
-                <LanguageSwitcher 
-                  currentLang={currentLang} 
-                  onLanguageChange={handleLanguageChange} 
-                  isMobile 
-                />
+            <>
+              {/* Backdrop */}
+              <div
+                className="fixed inset-0 z-[-1] md:hidden"
+                onClick={() => setIsOpen(false)}
+              />
 
-                <a
-                  href="https://docs.google.com/forms/d/1FcvebImT89-HOlijdpydedUs2PKPVKbnDu92C5-g9PI/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full text-center py-3 mt-2 bg-gray-900 text-white rounded-xl font-medium block"
-                >
-                  {t('nav_apply')}
-                </a>
-              </div>
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                className="absolute top-full left-6 right-6 mt-2 md:hidden"
+              >
+                <div className="bg-white border border-gray-200 shadow-xl rounded-2xl p-4 flex flex-col space-y-2">
+                  {navLinks.map((link) => {
+                    const isActive = location.pathname === link.href;
+                    return (
+                      <Link
+                        key={link.key}
+                        to={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`text-base px-3 py-2 rounded-lg transition-all duration-200 ${
+                          isActive
+                            ? "text-gray-900 font-bold bg-gray-100"
+                            : "font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                        }`}
+                      >
+                        {t(link.key)}
+                      </Link>
+                    );
+                  })}
+
+                  <hr className="border-gray-100 my-2" />
+
+                  <LanguageSwitcher
+                    currentLang={currentLang}
+                    onLanguageChange={handleLanguageChange}
+                    isMobile
+                  />
+
+                  <a
+                    href="https://docs.google.com/forms/d/1FcvebImT89-HOlijdpydedUs2PKPVKbnDu92C5-g9PI/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full text-center py-3 mt-2 bg-gray-900 text-white rounded-xl font-medium block"
+                  >
+                    {t('nav_apply')}
+                  </a>
+                </div>
+              </motion.div>
+            </>
           )}
         </AnimatePresence>
       </div>

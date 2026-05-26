@@ -1,7 +1,7 @@
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { X, Clock, TrendingUp, Code, CheckCircle2 } from "lucide-react";
-import { useState } from "react";
-import { useTranslation } from "react-i18next"; 
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 interface Module {
   title: string;
@@ -22,18 +22,31 @@ interface CourseModalProps {
   isOpen: boolean;
   onClose: () => void;
   course: CourseDetail | null;
+  courseId: string | null; 
 }
 
-export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
+export function CourseModal({ isOpen, onClose, course, courseId }: CourseModalProps) {
   const [expandedModule, setExpandedModule] = useState<number | null>(0);
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
-  if (!course) return null;
+
+  useEffect(() => {
+    if (isOpen) {
+      setExpandedModule(0);
+    }
+  }, [isOpen, courseId]);
+
+  if (!course || !courseId) return null;
+
+  const cleanId = courseId.replace("basic_", "");
+
+  
 
   return (
     <AnimatePresence>
       {isOpen && (
         <>
+        
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -41,6 +54,8 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
             onClick={onClose}
             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
           />
+          
+          
           <div className="fixed inset-0 z-50 overflow-y-auto">
             <div className="min-h-full flex items-center justify-center p-4">
               <motion.div
@@ -51,6 +66,7 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                 className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
               >
+               
                 <button
                   onClick={onClose}
                   className="absolute top-6 right-6 w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-all z-10"
@@ -58,15 +74,17 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                   <X className="w-5 h-5 text-gray-600" />
                 </button>
 
+               
                 <div className="bg-gradient-to-br from-blue-50 to-violet-50 px-12 py-16">
                   <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 }}
-                    className="text-5xl font-bold text-gray-900 mb-6"
+                    className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
                   >
-                    {course.title}
+                    {t(`course_${cleanId}_title`) || course.title}
                   </motion.h2>
+                  
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -75,32 +93,39 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                   >
                     <div className="flex items-center space-x-2">
                       <Clock className="w-5 h-5 text-blue-600" />
-                      <span className="font-medium">{course.duration}</span>
+                      <span className="font-medium">{t(`course_${cleanId}_dur`) || course.duration}</span>
                     </div>
                     <div className="w-1 h-1 bg-gray-400 rounded-full" />
                     <div className="flex items-center space-x-2">
                       <TrendingUp className="w-5 h-5 text-violet-600" />
                       <span className="font-medium">{course.level}</span>
                     </div>
-                    <div className="w-1 h-1 bg-gray-400 rounded-full" />
-                    <div className="flex items-center space-x-2">
-                      <Code className="w-5 h-5 text-cyan-600" />
-                      <span className="font-medium">{course.technologies.join(" • ")}</span>
-                    </div>
+                    {course.technologies && course.technologies.length > 0 && (
+                      <>
+                        <div className="w-1 h-1 bg-gray-400 rounded-full" />
+                        <div className="flex items-center space-x-2">
+                          <Code className="w-5 h-5 text-cyan-600" />
+                          <span className="font-medium">{course.technologies.join(" • ")}</span>
+                        </div>
+                      </>
+                    )}
                   </motion.div>
+                  
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 }}
                     className="text-xl text-gray-700 leading-relaxed max-w-3xl"
                   >
-                    {course.description}
+                    {t(`course_${cleanId}_desc`) || course.description}
                   </motion.p>
                 </div>
 
+             
                 <div className="px-12 py-12">
+                  
                   <h3 className="text-3xl font-bold text-gray-900 mb-8">
-                    {t('modal_outcomes')}
+                    {t('modal_outcomes', 'What you will learn')}
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4 mb-12">
                     {course.outcomes.map((outcome, index) => (
@@ -108,7 +133,7 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                         key={outcome}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.4 + index * 0.1 }}
+                        transition={{ delay: 0.4 + index * 0.05 }}
                         className="flex items-start space-x-3"
                       >
                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -117,8 +142,9 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                     ))}
                   </div>
 
+                
                   <h3 className="text-3xl font-bold text-gray-900 mb-8">
-                    {t('modal_curriculum')}
+                    {t('modal_curriculum', 'Course Curriculum')}
                   </h3>
                   <div className="space-y-4">
                     {course.modules.map((module, index) => (
@@ -126,7 +152,7 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                         key={module.title}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 + index * 0.1 }}
+                        transition={{ delay: 0.5 + index * 0.05 }}
                         className="border border-gray-200 rounded-2xl overflow-hidden bg-white hover:shadow-lg transition-all"
                       >
                         <button
@@ -138,7 +164,7 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                               {index + 1}
                             </div>
                             <h4 className="text-xl font-semibold text-gray-900">
-                              {module.title}
+                              {t(`course_${cleanId}_mod_${index}_title`) || module.title}
                             </h4>
                           </div>
                           <motion.div
@@ -150,7 +176,8 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                             </svg>
                           </motion.div>
                         </button>
-                        <AnimatePresence>
+                        
+                        <AnimatePresence initial={false}>
                           {expandedModule === index && (
                             <motion.div
                               initial={{ height: 0, opacity: 0 }}
@@ -162,16 +189,15 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                               <div className="px-8 pb-6 pt-2">
                                 <div className="pl-16 space-y-3">
                                   {module.topics.map((topic, topicIndex) => (
-                                    <motion.div
+                                    <div
                                       key={topic}
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: topicIndex * 0.05 }}
                                       className="flex items-center space-x-3 text-gray-700"
                                     >
                                       <div className="w-2 h-2 bg-gradient-to-br from-blue-500 to-violet-500 rounded-full" />
-                                      <span>{topic}</span>
-                                    </motion.div>
+                                      <span>
+                                        {t(`course_${cleanId}_mod_${index}_topic_${topicIndex}`) || topic}
+                                      </span>
+                                    </div>
                                   ))}
                                 </div>
                               </div>
@@ -182,16 +208,7 @@ export function CourseModal({ isOpen, onClose, course }: CourseModalProps) {
                     ))}
                   </div>
 
-                  <div className="mt-12 flex justify-center">
-                    <a
-                      href="https://docs.google.com/forms/d/1FcvebImT89-HOlijdpydedUs2PKPVKbnDu92C5-g9PI/viewform?edit_requested=true"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-12 py-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-all hover:shadow-xl text-lg font-medium"
-                    >
-                      {t('modal_enroll')} 
-                    </a>
-                  </div>
+                 
                 </div>
               </motion.div>
             </div>
