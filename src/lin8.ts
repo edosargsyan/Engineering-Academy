@@ -12,9 +12,97 @@ const resources = {
       "nav_contact": "Contact",
       "nav_apply": "Apply Now",
 
+
+
+"course_meta_duration_title": "Duration",
+      "course_meta_level_title": "Skill Level",
+      "course_weekly_frequency": "3-6 times a week",
+
+      // 1. Computer Architecture
+      "course_computer_architecture_level": "Advanced",
+      "course_computer_architecture_prerequisites": "Basic knowledge of digital logic required",
+
+      // 2. JavaScript Engineering
+      "course_javascript_level": "Beginner",
+      "course_javascript_prerequisites": "No prerequisites required",
+
+      // 3. devHack
+      "course_devhack_level": "Intermediate",
+      "course_devhack_prerequisites": "Prior experience with Linux/Git is recommended",
+
+      // 4. Embedded Systems
+      "course_embedded_level": "Advanced",
+      "course_embedded_prerequisites": "Basic C programming skills required",
+
+      // 5. AI Engineering
+      "course_ai_level": "Intermediate",
+      "course_ai_prerequisites": "Basic Python and linear algebra knowledge required",
+
+      // 6. Software Engineering
+      "course_software_level": "Beginner",
+      "course_software_prerequisites": "No prerequisites required",
+
+      // 7. Robotics Engineering
+      "course_robotics_level": "Advanced",
+      "course_robotics_prerequisites": "Basic knowledge of C++ or Python required",
+
+      // 8. Mechanical Engineering
+      "course_mechanical_level": "Beginner",
+      "course_mechanical_prerequisites": "Basic geometric understanding",
+
+      // 9. Microcontroller Fundamentals
+      "course_microcontroller_level": "Beginner",
+      "course_microcontroller_prerequisites": "Basic high-school physics is recommended",
+
+      // 10. Electrical Engineering
+      "course_electrical_level": "Intermediate",
+      "course_electrical_prerequisites": "Knowledge of basic electrodynamics laws",
+
+      // 11. Compiler Engineering
+      "course_compiler_level": "Expert",
+      "course_compiler_prerequisites": "Deep understanding of algorithms and C/C++",
+
+      // 12. Digital Logic Design
+      "course_digital_logic_level": "Beginner",
+      "course_digital_logic_prerequisites": "No prerequisites required",
+
+      // 13. FPGA Engineering
+      "course_fpga_level": "Advanced",
+      "course_fpga_prerequisites": "Fundamentals of digital logic required",
+
+      // 14. Hardware Engineering
+      "course_hardware_level": "Intermediate",
+      "course_hardware_prerequisites": "Basic electronics and circuit design knowledge",
+
+      // 15. Mobile Development
+      "course_mobile_level": "Beginner",
+      "course_mobile_prerequisites": "No prerequisites required",
+
+      // 16. Mathematics
+      "course_basic_math_level": "Basic Level",
+      "course_basic_math_prerequisites": "Knowledge of elementary school mathematics",
+
+      // 17. Physics
+      "course_basic_physics_level": "Basic Level",
+      "course_basic_physics_prerequisites": "Knowledge of elementary school physics",
+
+      // 18. Probability & Statistics
+      "course_probability_stats_level": "Intermediate",
+      "course_probability_stats_prerequisites": "Basic calculus skills required",
+
+      // 19. Advanced Mathematics
+      "course_advanced_math_level": "Advanced",
+      "course_advanced_math_prerequisites": "Proficiency in basic mathematics required",
+
+      // 20. Applied Physics
+      "course_applied_physics_level": "Advanced",
+      "course_applied_physics_prerequisites": "Proficiency in general physics required",
+
+
+
+     
       "course_embedded_title": "Embedded Systems",
-  "course_embedded_dur": "5 months",
-  "course_embedded_level": "Advanced",
+ 
   "course_embedded_desc": "Develop firmware and IoT solutions for hardware devices and embedded platforms. Learn to program microcontrollers, work with sensors, and build connected devices.",
   
   "course_embedded_outcome_0": "Program microcontrollers in C/C++.",
@@ -119,7 +207,6 @@ const resources = {
 
       "course_applied_physics_title": "Physics for Engineering",
   "course_applied_physics_dur": "8 months",
-  "course_applied_physics_level": "Advanced",
   "course_applied_physics_desc": "Deep engineering physics focused on electromagnetic field theory, wave dynamics, structural electronics behavior, and Electromagnetic Compatibility (EMC) guidelines.",
   
   "course_applied_physics_outcome_0": "Analyze structural electrostatic and electrodynamic power distribution systems.",
@@ -154,7 +241,6 @@ const resources = {
 
       "course_advanced_math_title": "Mathematics for Engineering",
   "course_advanced_math_dur": "8 Months",
-  "course_advanced_math_level": "Advanced",
   "course_advanced_math_desc": "Rigorous academic mathematics optimized for computing engineering. Master linear systems, multi-variable calculus gradients, and structural discrete topologies.",
   
   "course_advanced_math_outcome_0": "Solve advanced multi-dimensional matrix operations and linear systems.",
@@ -188,7 +274,6 @@ const resources = {
 
       "course_robotics_title": "Robotics Engineering",
   "course_robotics_dur": "12 months",
-  "course_robotics_level": "Beginner to Intermediate",
   "course_robotics_desc": "Master the complete lifecycle of robotics engineering from foundational mathematics and physics to state-of-the-art ROS programming, core SLAM algorithms, advanced computer vision techniques, and modern robotic control systems.",
   
   "course_robotics_outcome_0": "Apply multi-variable calculus, differential equations, and statistical error analysis to solve complex robotics engineering problems.",
@@ -247,7 +332,6 @@ const resources = {
 
   "course_software_title": "Software Engineering",
   "course_software_dur": "12 months",
-  "course_software_level": "Intermediate",
   "course_software_desc": "Master the complete software engineering stack from low-level computer architecture, digital logic design, and assembly programming, up through advanced memory management in C/C++, JavaScript internals, and complex algorithms.",
   
   "course_software_outcome_0": "Design and optimize digital logic circuits, synchronous sequential components, and custom arithmetic hardware interfaces.",
@@ -335,7 +419,6 @@ const resources = {
 
   "course_mechanical_title": "Mechanical Engineering",
   "course_mechanical_dur": "8 Months",
-  "course_mechanical_level": "Beginner to Intermediate",
   "course_mechanical_desc": "Master the complete lifecycle of mechanical engineering from foundational mathematics and physics to state-of-the-art CAD modeling, core fluid/thermal dynamics, advanced FEA/CFD simulations, and modern mechatronics integration.",
   
   "course_mechanical_outcome_0": "Apply multi-variable calculus, differential equations, and statistical error analysis to solve complex mechanical engineering problems",
@@ -392,7 +475,6 @@ const resources = {
   "course_mechanical_mod_5_topic_4": "Automation Projects: Constructing Prototype Smart Robotic Systems and Automated Production Machinery ",
       "course_probability_stats_title": "Probability Theory",
 "course_probability_stats_dur": "4 months",
-"course_probability_stats_level": "Advanced",
 "course_probability_stats_technologies": "Bayesian Inference, Distributions, A/B Testing, MLE",
 "course_probability_stats_desc": "A comprehensive engineering course covering the foundations of random variables, probability distributions, Bayesian networking, and data-driven statistical hypothesis evaluation.",
 
@@ -433,7 +515,6 @@ const resources = {
 
     "course_fpga_title": "FPGA Engineering",
     "course_fpga_dur": "2 months",
-    "course_fpga_level": "Intermediate",
     "course_fpga_technologies": "Verilog, VHDL, Xilinx Vivado, Intel Quartus",
     "course_fpga_desc": "Master FPGA design and development. Learn to create complex digital systems using hardware description languages, and implement them on industry-leading FPGA platforms.",
     "course_fpga_mod_0_title": "Module 1 — Core Modules",
@@ -483,7 +564,7 @@ const resources = {
 
   "course_ai_title": "AI Engineering",
   "course_ai_dur": "15 months",
-  "course_ai_level": "Advanced",
+
   "course_ai_technologies": "Python, TensorFlow, LangChain, Vector DBs, OpenAI, Calculus, Linear Algebra",
   "course_ai_desc": "Build intelligent applications with machine learning, large language models, and AI-powered systems. Learn to integrate cutting-edge AI into production applications backed by rigorous mathematical foundations.",
 
@@ -524,7 +605,6 @@ const resources = {
 
   "course_devhack_title": "devHack",
   "course_devhack_dur": "15 Months",
-  "course_devhack_level": "Advanced",
   "course_devhack_technologies": "Kubernetes, AWS, Terraform, Docker, CI/CD, Discrete Math",
   "course_devhack_desc": "Master infrastructure as code, container orchestration, and modern deployment pipelines. Learn to build, deploy, and maintain scalable cloud-native applications with a strong foundation in discrete mathematics, routing graph theory, and cryptographic numbers.",
 
@@ -563,7 +643,6 @@ const resources = {
 
   "course_computer_architecture_title": "Computer Architecture ",
 "course_computer_architecture_dur": "15 month",
-"course_computer_architecture_level": "Advanced",
 "course_computer_architecture_price": "45,000 AMD / month",
 "course_computer_architecture_desc": "Advanced research-level course detailing CPU microarchitecture pipeline design, hazard handling forwarding mechanism, cache coherence protocol management, hardware AI acceleration, and system level vulnerability analysis.",
 
@@ -632,7 +711,6 @@ const resources = {
 
 "course_hardware_title": "Hardware Engineering Fundamental",
 "course_hardware_dur": "8 month",
-"course_hardware_level": "Advanced",
 "course_hardware_price": "45,000 AMD / month",
 "course_hardware_desc": "Master the complete hardware design cycle. From core engineering mathematics and physics to advanced multi-layer PCB routing, FPGA programming with HDL, high-speed digital circuit design, and embedded system integration.",
 
@@ -777,8 +855,7 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "Advanced STM32 SoC blocks: Direct Memory Access (DMA), Low Power Modes, internal Real-Time Clock (RTC), Watchdog timers, USB controller foundations, and Controller Area Network (CAN) industrial bus protocols",
 "course_compiler_title": "Compiler Engineering",
 "course_compiler_dur": "6 weeks",
-"course_compiler_level": "Advanced",
-"course_compiler_price": "60,000 AMD / mo.",
+"course_compiler_price": "60,000 AMD / month.",
 "course_compiler_desc": "Become a world-class compiler engineer. Go from computer architecture and formal grammar basics to advanced LLVM IR transformations, JIT compilation, and state-of-the-art optimizations.",
 
 "course_compiler_mod_0_title": "Module 1 — Computer Science Foundations",
@@ -833,7 +910,6 @@ const resources = {
 
       "course_electrical_title": "Electrical Engineering",
 "course_electrical_dur": "12 months",
-"course_electrical_level": "Advanced",
 "course_electrical_price": "50,000 AMD / mo.",
 "course_electrical_desc": "Comprehensive program covering electrical engineering fundamentals, circuit design, power systems, industrial automation, and modern renewable energy technologies.",
 
@@ -855,7 +931,7 @@ const resources = {
 
       "course_javascript_title": "JavaScript Engineering",
 "course_javascript_dur": "8-9 months",
-"course_javascript_level": "Intermediate",
+
 "course_javascript_price": "60,000 AMD / mo.",
 "course_javascript_desc": "Master modern JavaScript, from core concepts and ES6+ to advanced DOM manipulation and Web APIs. Build a strong foundation for modern web development.",
 
@@ -1290,10 +1366,103 @@ const resources = {
       "nav_projects": "Проекты",
       "nav_contact": "Контакты",
       "nav_apply": "Подать заявку",
+      "course_meta_duration_title": "Длительность",
+      "course_meta_level_title": "Уровень",
+
+
+      "course_weekly_frequency": "3-6 раз в неделю",
+
+      // 1. Computer Architecture
+      "course_computer_architecture_level": "Продвинутый",
+      "course_computer_architecture_prerequisites": "Требуются базовые знания цифровой логики",
+
+      // 2. JavaScript Engineering
+      "course_javascript_level": "Для новичков",
+      "course_javascript_prerequisites": "Не требует предварительной подготовки",
+
+      // 3. devHack
+      "course_devhack_level": "Средний уровень",
+      "course_devhack_prerequisites": "Желателен опыт администрирования Linux/Git",
+
+      // 4. Embedded Systems
+      "course_embedded_level": "Продвинутый",
+      "course_embedded_prerequisites": "Требуются базовые знания языка C",
+
+      // 5. AI Engineering
+      "course_ai_level": "Средний уровень",
+      "course_ai_prerequisites": "Требуются базовые знания Python и линейной алгебры",
+
+      // 6. Software Engineering
+      "course_software_level": "Для новичков",
+      "course_software_prerequisites": "Не требует предварительной подготовки",
+
+      // 7. Robotics Engineering
+      "course_robotics_level": "Продвинутый",
+      "course_robotics_prerequisites": "Требуются базовые знания C++ или Python",
+
+      // 8. Mechanical Engineering
+      "course_mechanical_level": "Для новичков",
+      "course_mechanical_prerequisites": "Базовые геометрические представления",
+
+      // 9. Microcontroller Fundamentals
+      "course_microcontroller_level": "Для новичков",
+      "course_microcontroller_prerequisites": "Желательно понимание основ школьной физики",
+
+      // 10. Electrical Engineering
+      "course_electrical_level": "Средний уровень",
+      "course_electrical_prerequisites": "Знание базовых законов электродинамики",
+
+      // 11. Compiler Engineering
+      "course_compiler_level": "Эксперт",
+      "course_compiler_prerequisites": "Глубокое знание алгоритмов и C/C++",
+
+      // 12. Digital Logic Design
+      "course_digital_logic_level": "Для новичков",
+      "course_digital_logic_prerequisites": "Не требует предварительной подготовки",
+
+      // 13. FPGA Engineering
+      "course_fpga_level": "Продвинутый",
+      "course_fpga_prerequisites": "Требуется знание основ цифровой логики",
+
+      // 14. Hardware Engineering
+      "course_hardware_level": "Средний уровень",
+      "course_hardware_prerequisites": "Базовые знания электроники и схемотехники",
+
+      // 15. Mobile Development
+      "course_mobile_level": "Для новичков",
+      "course_mobile_prerequisites": "Не требует предварительной подготовки",
+
+      // 16. Mathematics
+      "course_basic_math_level": "Базовый уровень",
+      "course_basic_math_prerequisites": "Знание основ школьной математики",
+
+      // 17. Physics
+      "course_basic_physics_level": "Базовый уровень",
+      "course_basic_physics_prerequisites": "Знание основ школьной физики",
+
+      // 18. Probability & Statistics
+      "course_probability_stats_level": "Средний уровень",
+      "course_probability_stats_prerequisites": "Базовые навыки математического анализа",
+
+      // 19. Advanced Mathematics
+      "course_advanced_math_level": "Продвинутый",
+      "course_advanced_math_prerequisites": "Требуется владение базовой математикой",
+
+      // 20. Applied Physics
+      "course_applied_physics_level": "Продвинутый",
+      "course_applied_physics_prerequisites": "Требуется владение общей физикой",
+
+
+
+
+
+
+      // Переводы для JavaScript
+   
+
 
       "course_embedded_title": "Встраиваемые системы (Embedded Systems)",
-  "course_embedded_dur": "5 месяцев",
-  "course_embedded_level": "Продвинутый (Advanced)",
+
   "course_embedded_desc": "Разработка прошивок и IoT-решений для аппаратных устройств и встраиваемых платформ. Научитесь программировать микроконтроллеры, работать с датчиками и создавать подключенные устройства.",
   
   "course_embedded_outcome_0": "Программировать микроконтроллеры на C/C++.",
@@ -1353,7 +1522,6 @@ const resources = {
 
       "course_mobile_title": "Мобильная разработка (Mobile Development)",
   "course_mobile_dur": "6 месяцев",
-  "course_mobile_level": "Средний (Intermediate)",
   "course_mobile_desc": "Станьте экспертом в кроссплатформенной разработке. Погрузитесь в Flutter и Dart для создания высокопроизводительных приложений для iOS и Android с единой кодовой базой.",
   
   "course_mobile_outcome_0": "Профессиональное владение языком программирования Dart.",
@@ -1398,7 +1566,6 @@ const resources = {
 
       "course_applied_physics_title": "Физика для инженеров (Physics for Engineering)",
   "course_applied_physics_dur": "8 месяцев",
-  "course_applied_physics_level": "Продвинутый (Advanced)",
   "course_applied_physics_desc": "Углубленная инженерная физика, ориентированная на теорию электромагнитного поля, волновую динамику, структурное поведение электроники и стандарты электромагнитной совместимости (ЭМС).",
   
   "course_applied_physics_outcome_0": "Анализировать структурные электростатические и электродинамические системы распределения энергии.",
@@ -1432,7 +1599,6 @@ const resources = {
 
       "course_advanced_math_title": "Математика для инженеров (Mathematics for Engineering)",
   "course_advanced_math_dur": "8 месяцев",
-  "course_advanced_math_level": "Продвинутый (Advanced)",
   "course_advanced_math_desc": "Строгая академическая математика, оптимизированная для компьютерной инженерии. Освойте линейные системы, градиенты функций нескольких переменных и топологии дискретных структур.",
   
   "course_advanced_math_outcome_0": "Решать сложные многомерные матричные операции и системы линейных уравнений.",
@@ -1466,7 +1632,6 @@ const resources = {
 
       "course_robotics_title": "Робототехника (Robotics Engineering)",
   "course_robotics_dur": "12 месяцев",
-  "course_robotics_level": "Начальный-Средний (Beginner to Intermediate)",
   "course_robotics_desc": "Освойте полный жизненный цикл проектирования робототехники: от фундаментальной математики и физики до продвинутого программирования в ROS, основных алгоритмов SLAM, современных методов компьютерного зрения и построения систем автоматического управления.",
   
   "course_robotics_outcome_0": "Применять методы математического анализа, дифференциальные уравнения и статистический анализ погрешностей для решения комплексных инженерных задач в робототехнике.",
@@ -1525,7 +1690,6 @@ const resources = {
 
   "course_software_title": "Разработка программного обеспечения (Software Engineering)",
   "course_software_dur": "12 месяцев",
-  "course_software_level": "Средний (Intermediate)",
   "course_software_desc": "Освойте полный стек разработки ПО: от низкоуровневой компьютерной архитектуры, проектирования цифровой логики и программирования на ассемблере до продвинутого управления памятью в C/C++, внутреннего устройства движка JavaScript и сложных алгоритмов.",
   
   "course_software_outcome_0": "Проектировать и оптимизировать схемы цифровой логики, синхронные последовательные компоненты и кастомные аппаратные интерфейсы арифметических вычислений.",
@@ -1611,7 +1775,6 @@ const resources = {
   "course_software_mod_8_topic_7": "Минимальные остовные деревья (алгоритмы Прима и Краскала), жадные подходы и многоэтапное динамическое программирование.",
   "course_mechanical_title": "Машиностроение и механическая инженерия",
   "course_mechanical_dur": "8 месяцев",
-  "course_mechanical_level": "От начального до среднего",
   "course_mechanical_desc": "Освойте полный жизненный цикл проектирования: от базовой математики и физики до передового 3D-моделирования в CAD, гидрогазодинамики, тепловых процессов, сложных симуляций FEA/CFD и интеграции современных мехатронных систем.",
   
   "course_mechanical_outcome_0": "Применять математический анализ функций многих переменных, дифференциальные уравнения и статистический анализ погрешностей для решения комплексных инженерных задач",
@@ -1668,7 +1831,6 @@ const resources = {
   "course_mechanical_mod_5_topic_4": "Проекты автоматизации: создание прототипов интеллектуальных роботизированных систем и автоматизированного производственного оборудования",
       "course_probability_stats_title": "Теория вероятности",
 "course_probability_stats_dur": "4 месяца",
-"course_probability_stats_level": "Продвинутый",
 "course_probability_stats_technologies": "Байесовский вывод, Распределения, A/B тестирование, ММП",
 "course_probability_stats_desc": "Комплексный инженерный курс, посвященный основам случайных величин, распределениям вероятностей, Байесовским сетям и оценке статистических гипотез на основе данных.",
 
@@ -1709,7 +1871,6 @@ const resources = {
 
       "course_fpga_title": "Инженерия (FPGA)",
   "course_fpga_dur": "2 месяца",
-  "course_fpga_level": "Средний",
   "course_fpga_technologies": "Verilog, VHDL, Xilinx Vivado, Intel Quartus",
   "course_fpga_desc": "Освойте проектирование и разработку на ПЛИС (FPGA). Научитесь создавать сложные цифровые системы с использованием языков описания оборудования и внедрять их на ведущих отраслевых платформах ПЛИС.",
   "course_fpga_mod_0_title": "Модуль 1 — Основные модули",
@@ -1755,7 +1916,6 @@ const resources = {
 
   "course_ai_title": "AI Инженерия",
   "course_ai_dur": "15 месяцев",
-  "course_ai_level": "Продвинутый",
   "course_ai_technologies": "Python, TensorFlow, LangChain, Векторные базы данных, OpenAI, Математический анализ, Линейная алгебра",
   "course_ai_desc": "Создавайте интеллектуальные приложения с использованием машинного обучения, больших языковых моделей и систем на базе ИИ. Научитесь внедрять передовой ИИ в производственные приложения, опираясь на строгий математический фундамент.",
 
@@ -1794,7 +1954,6 @@ const resources = {
       
   "course_devhack_title": "devHack",
   "course_devhack_dur": "15 месяцев",
-  "course_devhack_level": "Продвинутый",
   "course_devhack_technologies": "Kubernetes, AWS, Terraform, Docker, CI/CD, Дискретная математика",
   "course_devhack_desc": "Освойте инфраструктуру как код, оркестрацию контейнеров и современные конвейеры развертывания. Научитесь создавать, развертывать и поддерживать масштабируемые облачные приложения, имея прочную основу в дискретной математике, теории графов маршрутизации и криптографических числах.",
 
@@ -1831,7 +1990,6 @@ const resources = {
   "course_devHack_mod_3_topic_5": "Основы управления инцидентами и продвинутое отслеживание реагирования на инциденты",
   "course_computer_architecture_title": "Архитектура компьютера",
   "course_computer_architecture_dur": "15 месяцев",
-  "course_computer_architecture_level": "Продвинутый",
   "course_computer_architecture_price": "45 000 драм / месяц",
   "course_computer_architecture_desc": "Продвинутый курс исследовательского уровня, детально описывающий проектирование конвейера микроархитектуры CPU, механизмы обработки опасностей (hazards), управление протоколами когерентности кэша, аппаратное ускорение ИИ и анализ уязвимостей на системном уровне.",
 
@@ -1896,7 +2054,6 @@ const resources = {
 
 "course_hardware_title": "аппаратная инженерия (Hardware Engineering)",
 "course_hardware_dur": "8 месяц",
-"course_hardware_level": "Продвинутый",
 "course_hardware_price": "45,000 AMD / месяц",
 "course_hardware_desc": "Освойте полный цикл проектирования аппаратного обеспечения. От базовой инженерной математики и физики до разводки многослойной печатной платы, программирования FPGA на языке HDL, проектирования высокоскоростной цифровой схемы и интеграции встроенной системы.",
 
@@ -2042,7 +2199,6 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "Сложные блоки SoC STM32: прямой доступ к памяти (DMA), режимы пониженного энергопотребления (Low Power), внутренние часы реального времени (RTC), сторожевые таймеры (Watchdog), основы USB-контроллеров и промышленная шина CAN",
 "course_compiler_title": "Проектирование компиляторов (Compiler Engineering)",
 "course_compiler_dur": "6 недель",
-"course_compiler_level": "Продвинутый",
 "course_compiler_price": "60,000 AMD / мес.",
 "course_compiler_desc": "Станьте инженером компиляторов мирового уровня. Пройдите путь от архитектуры компьютера и основ формальных грамматик до продвинутых преобразований LLVM IR, JIT-компиляции и ультрасовременных оптимизаций.",
 
@@ -2098,7 +2254,6 @@ const resources = {
 
 "course_electrical_title": "Электротехника (Electrical Engineering)",
 "course_electrical_dur": "12 месяцев",
-"course_electrical_level": "Продвинутый",
 "course_electrical_price": "50,000 AMD / мес.",
 "course_electrical_desc": "Комплексная программа, охватывающая основы электротехники, проектирование схем, силовую электронику, промышленную автоматизацию и современные технологии возобновляемой энергии.",
 
@@ -2476,7 +2631,6 @@ const resources = {
 
 
 
-"course_basic_math_level": "От начального до среднего",
 "course_basic_math_tech_list": "Алгебра • Геометрия • Тригонометрия • Векторы • Системы координат",
 
   "course_devhack_outcome_0": "Опыт командной работы по гибким методологиям Scrum/Agile",
@@ -2568,9 +2722,99 @@ const resources = {
       "nav_programs": "Ծրագրեր",
       "nav_projects": "Նախագծեր",
 
+
+
+
+"course_meta_duration_title": "Տևողությունը",
+      "course_meta_level_title": "Բարդության մակարդակ",
+      "course_weekly_frequency": "շաբաթական 3-6 անգամ",
+
+      // 1. Computer Architecture
+      "course_computer_architecture_level": "Խորացված",
+      "course_computer_architecture_prerequisites": "Պահանջվում են թվային տրամաբանության բազային գիտելիքներ",
+
+      // 2. JavaScript Engineering
+      "course_javascript_level": "Սկսնակների համար",
+      "course_javascript_prerequisites": "Նախնական պատրաստվածություն չի պահանջվում",
+
+      // 3. devHack
+      "course_devhack_level": "Միջին մակարդակ",
+      "course_devhack_prerequisites": "Linux/Git-ի հետ աշխատանքի փորձը ցանկալի է",
+
+      // 4. Embedded Systems
+      "course_embedded_level": "Խորացված",
+      "course_embedded_prerequisites": "Պահանջվում են C լեզվի բազային գիտելիքներ",
+
+      // 5. AI Engineering
+      "course_ai_level": "Միջին մակարդակ",
+      "course_ai_prerequisites": "Պահանջվում են Python-ի և գծային հանրահաշվի հիմունքների իմացություն",
+
+      // 6. Software Engineering
+      "course_software_level": "Սկսնակների համար",
+      "course_software_prerequisites": "Նախնական պատրաստվածություն չի պահանջվում",
+
+      // 7. Robotics Engineering
+      "course_robotics_level": "Խորացված",
+      "course_robotics_prerequisites": "Պահանջվում են C++ կամ Python լեզուների բազային գիտելիքներ",
+
+      // 8. Mechanical Engineering
+      "course_mechanical_level": "Սկսնակների համար",
+      "course_mechanical_prerequisites": "Բազային երկրաչափական պատկերացումներ",
+
+      // 9. Microcontroller Fundamentals
+      "course_microcontroller_level": "Սկսնակների համար",
+      "course_microcontroller_prerequisites": "Դպրոցական ֆիզիկայի հիմունքների իմացությունը ցանկալի է",
+
+      // 10. Electrical Engineering
+      "course_electrical_level": "Միջին մակարդակ",
+      "course_electrical_prerequisites": "Էլեկտրադինամիկայի բազային օրենքների իմացություն",
+
+      // 11. Compiler Engineering
+      "course_compiler_level": "Փորձագետ",
+      "course_compiler_prerequisites": "Ալգորիթմների և C/C++ լեզուների խորը իմացություն",
+
+      // 12. Digital Logic Design
+      "course_digital_logic_level": "Սկսնակների համար",
+      "course_digital_logic_prerequisites": "Նախնական պատրաստվածություն չի պահանջվում",
+
+      // 13. FPGA Engineering
+      "course_fpga_level": "Խորացված",
+      "course_fpga_prerequisites": "Պահանջվում է թվային տրամաբանության հիմունքների իմացություն",
+
+      // 14. Hardware Engineering
+      "course_hardware_level": "Միջին մակարդակ",
+      "course_hardware_prerequisites": "Էլեկտրոնիկայի և սխեմատեխնիկայի բազային գիտելիքներ",
+
+      // 15. Mobile Development
+      "course_mobile_level": "Սկսնակների համար",
+      "course_mobile_prerequisites": "Նախնական պատրաստվածություն չի պահանջվում",
+
+      // 16. Mathematics
+      "course_basic_math_level": "Բազային մակարդակ",
+      "course_basic_math_prerequisites": "Դպրոցական մաթեմատիկայի հիմունքների իմացություն",
+
+      // 17. Physics
+      "course_basic_physics_level": "Բազային մակարդակ",
+      "course_basic_physics_prerequisites": "Դպրոցական ֆիզիկայի հիմունքների իմացություն",
+
+      // 18. Probability & Statistics
+      "course_probability_stats_level": "Միջին մակարդակ",
+      "course_probability_stats_prerequisites": "Մաթեմատիկական անալիզի բազային գիտելիքներ",
+
+      // 19. Advanced Mathematics
+      "course_advanced_math_level": "Խորացված",
+      "course_advanced_math_prerequisites": "Պահանջվում է բազային մաթեմատիկայի տիրապետում",
+
+      // 20. Applied Physics
+      "course_applied_physics_level": "Խորացված",
+      "course_applied_physics_prerequisites": "Պահանջվում է ընդհանուր ֆիզիկայի տիրապետում",
+
+
+
+
+     
+
       "course_embedded_title": "Ներդրված Համակարգեր (Embedded Systems)",
-  "course_embedded_dur": "5 ամիս",
-  "course_embedded_level": "Առաջադեմ (Advanced)",
   "course_embedded_desc": "Մշակեք որոնվածներ (firmware) և IoT լուծումներ սարքավորումային միջավայրերի և ներդրված հարթակների համար: Սովորեք ծրագրավորել միկրոկոնտրոլերներ, աշխատել սենսորների հետ և ստեղծել կապակցված սարքեր:",
   
   "course_embedded_outcome_0": "Ծրագրավորել միկրոկոնտրոլերներ C/C++ լեզուներով:",
@@ -2675,7 +2919,6 @@ const resources = {
 
       "course_applied_physics_title": "Ֆիզիկա ինժեներների համար (Physics for Engineering)",
   "course_applied_physics_dur": "8 ամիս",
-  "course_applied_physics_level": "Առաջադեմ (Advanced)",
   "course_applied_physics_desc": "Խորացված ինժեներական ֆիզիկա՝ կենտրոնացված էլեկտրամագնիսական դաշտի տեսության, ալիքային դինամիկայի, էլեկտրոնիկայի կառուցվածքային վարքագծի և էլեկտրամագնիսական համատեղելիության (EMC) չափանիշների վրա:",
   
   "course_applied_physics_outcome_0": "Վերլուծել կառուցվածքային էլեկտրաստատիկ և էլեկտրադինամիկ հզորության բաշխման համակարգերը:",
@@ -2709,7 +2952,6 @@ const resources = {
 
 "course_advanced_math_title": "Մաթեմատիկա ինժեներների համար (Mathematics for Engineering)",
   "course_advanced_math_dur": "8 ամիս",
-  "course_advanced_math_level": "Առաջադեմ (Advanced)",
   "course_advanced_math_desc": "Խիստ ակադեմիական մաթեմատիկա՝ օպտիմալացված համակարգչային ինժեներիայի համար: Տիրապետեք գծային համակարգերին, բազմափոփոխական ֆունկցիաների գրադիենտներին և դիսկրետ կառուցվածքների տոպոլոգիաներին:",
   
   "course_advanced_math_outcome_0": "Լուծել բարդ բազմաչափ մատրիցային գործողություններ և գծային հավասարումների համակարգեր:",
@@ -2743,7 +2985,6 @@ const resources = {
 
       "course_robotics_title": "Ռոբոտատեխնիկա (Robotics Engineering)",
   "course_robotics_dur": "12-15 շաբաթ",
-  "course_robotics_level": "Սկսնակից մինչև Միջին (Beginner to Intermediate)",
   "course_robotics_desc": "Տիրապետեք ռոբոտատեխնիկայի նախագծման ամբողջական կենսապտույտին՝ հիմնարար մաթեմատիկայից և ֆիզիկայից մինչև ROS-ի առաջադեմ ծրագրավորում, SLAM-ի հիմնական ալգորիթմներ, համակարգչային տեսողության ժամանակակից մեթոդներ և ավտոմատ կառավարման համակարգերի կառուցում:",
   
   "course_robotics_outcome_0": "Կիրառել մաթեմատիկական անալիզի մեթոդները, դիֆերենցիալ հավասարումները և սխալների վիճակագրական վերլուծությունը ռոբոտատեխնիկայի բարդ ինժեներական խնդիրների լուծման համար:",
@@ -2802,7 +3043,6 @@ const resources = {
 
   "course_software_title": "Ծրագրային ապահովման ինժեներիա (Software Engineering)",
   "course_software_dur": "12 ամիս",
-  "course_software_level": "Միջին (Intermediate)",
   "course_software_desc": "Տիրապետեք ծրագրային ապահովման մշակման ամբողջական ստեկին՝ ցածր մակարդակի համակարգչային ճարտարապետությունից, թվային տրամաբանության նախագծումից և ասեմբլեր ծրագրավորումից մինչև C/C++ առաջադեմ հիշողության կառավարում, JavaScript-ի ներքին կառուցվածք և բարդ ալգորիթմներ:",
   
   "course_software_outcome_0": "Նախագծել և օպտիմալացնել թվային տրամաբանության սխեմաները, սինխրոն հաջորդական բաղադրիչները և թվաբանական հաշվարկների անհատականացված սարքավորումների ինտերֆեյսերը:",
@@ -2890,7 +3130,6 @@ const resources = {
 
   "course_mechanical_title": "Մեքենաշինություն և մեխանիկական ինժեներիա",
   "course_mechanical_dur": "8 ամիս",
-  "course_mechanical_level": "Սկսնակից մինչև միջին",
   "course_mechanical_desc": "Տիրապետեք մեխանիկական ինժեներիայի ամբողջական կենսապտույտին՝ հիմնարար մաթեմատիկայից և ֆիզիկայից մինչև ժամանակակից CAD մոդելավորում, հիդրոգազադինամիկայի և ջերմային գործընթացների միջուկ, FEA/CFD առաջադեմ սիմուլյացիաներ և ժամանակակից մեխատրոնիկ համակարգերի ինտեգրում։",
   
   "course_mechanical_outcome_0": "Կիրառել բազմափոփոխական մաթեմատիկական անալիզ, դիֆերենցիալ հավասարումներ և սխալների վիճակագրական վերլուծություն՝ բարդ մեխանիկական խնդիրների լուծման համար",
@@ -2948,7 +3187,6 @@ const resources = {
 
       "course_probability_stats_title": "Հավանականության տեսություն",
 "course_probability_stats_dur": "4 ամիս",
-"course_probability_stats_level": "Առաջադեմ",
 "course_probability_stats_technologies": "Բեյսյան եզրակացություն, Բաշխումներ, A/B թեստավորում, MLE",
 "course_probability_stats_desc": "Համակարգչային ճարտարագիտության համապարփակ դասընթաց՝ կենտրոնացած պատահական մեծությունների, հավանականության բաշխումների, Բեյսյան ցանցերի և տվյալների վրա հիմնված վիճակագրական վարկածների գնահատման վրա։",
 
@@ -2987,7 +3225,6 @@ const resources = {
 "course_probability_stats_mod_3_topic_3": "Ֆունկցիաներ՝ PDF (Probability Density Function)",
 "course_probability_stats_mod_3_topic_4": "Ֆունկցիաներ՝ CDF (Cumulative Distribution Function)",
   "course_fpga_dur": "2 ամիս",
-  "course_fpga_level": "Միջին",
   "course_fpga_technologies": "Verilog, VHDL, Xilinx Vivado, Intel Quartus",
   "course_fpga_desc": "Տիրապետեք FPGA-ի նախագծմանը և մշակմանը: Սովորեք ստեղծել բարդ թվային համակարգեր՝ օգտագործելով սարքավորումների նկարագրման լեզուներ, և իրականացրեք դրանք առաջատար FPGA հարթակներում:",
   "course_fpga_mod_0_title": "Մոդուլ 1 — Հիմնական մոդուլներ",
@@ -3032,7 +3269,6 @@ const resources = {
   "course_digital_logic_mod_0_topic_13": "Խափանումների ախտորոշում և թեստավորում",
   "course_ai_title": "AI Ինժեներություն",
   "course_ai_dur": "15 ամիս",
-  "course_ai_level": "Առաջադեմ",
   "course_ai_technologies": "Python, TensorFlow, LangChain, Վեկտորային տվյալների բազաներ, OpenAI, Մաթեմատիկական անալիզ, Գծային հանրահաշիվ",
   "course_ai_desc": "Կառուցեք խելացի հավելվածներ՝ օգտագործելով մեքենայական ուսուցում, լեզվական մեծ մոդելներ և AI-ով աշխատող համակարգեր։ Սովորեք ներդնել առաջադեմ AI-ն արտադրական հավելվածներում՝ հիմնված խիստ մաթեմատիկական հիմքերի վրա։",
 
@@ -3071,7 +3307,6 @@ const resources = {
 
   "course_devhack_title": "devHack",
   "course_devhack_dur": "15 ամիս",
-  "course_devhack_level": "Առաջադեմ",
   "course_devhack_technologies": "Kubernetes, AWS, Terraform, Docker, CI/CD, Դիսկրետ մաթեմատիկա",
   "course_devhack_desc": "Տիրապետեք ինֆրակառուցվածքին որպես կոդ (IaC), կոնտեյներների օրկեստրավորմանը և ժամանակակից տեղակայման խողովակաշարերին։ Սովորեք կառուցել, տեղակայել և սպասարկել մասշտաբային cloud-native հավելվածներ՝ հիմնված դիսկրետ մաթեմատիկայի, երթուղային գրաֆների տեսության և կրիպտոգրաֆիկ թվերի ամուր հիմքի վրա։",
 
@@ -3108,7 +3343,6 @@ const resources = {
   "course_devHack_mod_3_topic_5": "Միջադեպերի կառավարման հիմունքներ և միջադեպերին արձագանքման առաջադեմ հետևում",
 "course_computer_architecture_title": "Համակարգչային ճարտարապետություն",
   "course_computer_architecture_dur": "15 ամիս",
-  "course_computer_architecture_level": "Առաջադեմ",
   "course_computer_architecture_price": "45,000 դրամ / ամիս",
   "course_computer_architecture_desc": "Առաջադեմ հետազոտական մակարդակի դասընթաց, որը մանրամասնում է CPU-ի միկրոճարտարապետության կոնվեյերի նախագծումը, վտանգների (hazards) մշակման մեխանիզմը, քեշի կոհերենտության արձանագրությունների կառավարումը, AI սարքային արագացումը և համակարգային մակարդակի խոցելիության վերլուծությունը։",
 
@@ -3173,7 +3407,6 @@ const resources = {
 
       "course_hardware_title": "Ապարատային ճարտարագիտության (Hardware Engineering)",
 "course_hardware_dur": "8 ամիս",
-"course_hardware_level": "Առաջադեմ",
 "course_hardware_price": "45,000 AMD / ամիս",
 "course_hardware_desc": "Տիրապետեք ապարատային նախագծման ամբողջական ցիկլին: Մաթեմատիկայի և ֆիզիկայի հիմնական օրենքից մինչև բազմաշերտ տպատախտակի (PCB) տեղադրում, FPGA ծրագրավորում HDL լեզվով, բարձր արագության թվային սխեմայի նախագծում և ներդրված համակարգի ինտեգրում:",
 
@@ -3239,7 +3472,6 @@ const resources = {
 "course_hardware_mod_8_topic_2": "Ապարատային ստուգում. առաջադեմ ազդանշանի ամբողջականություն, սնուցման ամբողջականության մոդելավորում և բազմաալիք ժամանակային վերլուծություն [cite: 548, 549, 550]",
      "course_microcontroller_title": "Միկրոկոնտրոլերի հիմունք (Microcontroller Fundamental)",
 "course_microcontroller_dur": "6-8 ամիս",
-"course_microcontroller_level": "Միջին",
 "course_microcontroller_price": "45,000 AMD / ամիս",
 "course_microcontroller_desc": "Տիրապետեք ներդրված համակարգի (embedded system) մշակման հիմունքին: Ուսումնասիրեք միկրոկոնտրոլերի ճարտարապետությունը, թվային տրամաբանությունը, ցածր մակարդակի (bare-metal) C ծրագրավորումը, ծայրամասային սարքի փոխազդեցությունը և այնպիսի առաջատար թեմա, ինչպիսիք են RTOS-ը, DMA-ը և արդյունաբերական արձանագրությունը՝ STM32 սարքավորման բազայի վրա:",
 
@@ -3318,13 +3550,11 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "STM32 SoC-ի առաջատար բլոկ. հիշողության ուղիղ հասանելիություն (DMA), էներգախնայողության ռեժիմ (Low Power), իրական ժամանակի ներքին ժամացույց (RTC), հսկիչ թայմեր (Watchdog), USB կոնտրոլերի հիմունք և արդյունաբերական CAN դող",
 "course_electrical_title": "Էլեկտրատեխնիկա (Electrical Engineering)",
 "course_electrical_dur": "12 ամիս",
-"course_electrical_level": "Բարձր",
 "course_electrical_price": "50,000 AMD / ամիս",
 "course_electrical_desc": "Համապարփակ ծրագիր, որն ընդգրկում է էլեկտրատեխնիկայի հիմունքները, սխեմաների նախագծումը, ուժային էլեկտրոնիկան, արդյունաբերական ավտոմատացումը և վերականգնվող էներգիայի ժամանակակից տեխնոլոգիաները.",
 
 "course_compiler_title": "Կոմպիլյատորների նախագծում (Compiler Engineering)",
 "course_compiler_dur": "6 շաբաթ",
-"course_compiler_level": "Բարձր",
 "course_compiler_price": "60,000 AMD / ամիս",
 "course_compiler_desc": "Դարձեք համաշխարհային մակարդակի կոմպիլյատորների ինժեներ: Անցեք ուղի համակարգչային ճարտարապետությունից և ֆորմալ քերականություններից մինչև LLVM IR տրանսֆորմացիաներ, JIT կոմպիլյացիա և առաջատար օպտիմալացումներ:",
 
@@ -3477,7 +3707,6 @@ const resources = {
   "course_physics_dur": "6 ամիս",
   "course_physics_desc": "Դասական մեխանիկա, թերմոդինամիկա, էլեկտրամագնիսականություն և օպտիկա՝ որպես ֆիզիկական համակարգերի նախագծման հիմք:",
   "course_math_title": "Մաթեմատիկա",
-  "course_basic_math_level": "Սկսնակից մինչև միջին",
 "course_basic_math_tech_list": "Հանրահաշիվ • Երկրաչափություն • Եռանկյունաչափություն • Վեկտորներ • Կոորդինատային համակարգեր",
   "course_math_dur": "6 ամիս",
   "course_math_desc": "Մաթեմատիկական անալիզ, գծային հանրահաշիվ, հավանականությունների տեսություն և դիսկրետ մաթեմատիկա՝ բարդ ինժեներական հաշվարկների համար:",
