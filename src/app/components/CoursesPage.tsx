@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ArrowLeft, Clock, TrendingUp, ChevronDown } from "lucide-react";
+import { ArrowLeft, Clock, TrendingUp, ChevronDown, CreditCard } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { courseDetails } from "../data/courseDetails";
 import { Navbar } from "./Navbar";
@@ -215,7 +215,10 @@ export const CoursesPage = () => {
   });
 
   const hasCustomTechTranslation = t(`course_${currentId}_tech_list`, { defaultValue: "" }) !== "";
+  
+  // Переводы метаданных карточек
   const displayLevel = t(`course_${currentId}_level`, { defaultValue: course.level });
+  const displayPrice = t(`course_${currentId}_price`, { defaultValue: meta.price });
 
   const techList = hasCustomTechTranslation 
     ? t(`course_${currentId}_tech_list`).split("•").map(s => s.trim())
@@ -282,8 +285,10 @@ export const CoursesPage = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-24">
+        {/* СЕКЦИЯ МЕТАДАННЫХ (3 КАРТОЧКИ: ДЛИТЕЛЬНОСТЬ, СЛОЖНОСТЬ, СТОИМОСТЬ) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-24">
           
+          {/* 1. Длительность */}
           <div className="bg-white rounded-2xl p-8 border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] flex flex-col items-start">
             <div className="p-3 bg-blue-50 text-blue-600 rounded-xl mb-6">
               <Clock className="w-6 h-6" />
@@ -299,6 +304,7 @@ export const CoursesPage = () => {
             </p>
           </div>
 
+          {/* 2. Уровень сложности */}
           <div className="bg-white rounded-2xl p-8 border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] flex flex-col items-start">
             <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl mb-6">
               <TrendingUp className="w-6 h-6" />
@@ -314,13 +320,28 @@ export const CoursesPage = () => {
             </p>
           </div>
 
+          {/* 3. Стоимость курса */}
+          <div className="bg-white rounded-2xl p-8 border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] flex flex-col items-start">
+            <div className="p-3 bg-purple-50 text-purple-600 rounded-xl mb-6">
+              <CreditCard className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-bold text-slate-950 mb-2">
+              {t('course_meta_price_title', 'Tuition Fee')}
+            </h3>
+            <p className="text-slate-600 font-medium mb-1">
+              {displayPrice}
+            </p>
+            <p className="text-slate-400 text-sm">
+              {t('course_price_subtitle', 'Flexible payment options available')}
+            </p>
+          </div>
+
         </div>
 
         <div className="max-w-3xl mx-auto text-center mb-24">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-950 mb-4 tracking-tight">
             {t('modal_curriculum', 'Course Curriculum')}
           </h2>
-          
         </div>
 
         <div className="max-w-4xl mx-auto space-y-4 mb-24 ">

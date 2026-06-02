@@ -12,6 +12,30 @@ const resources = {
       "nav_contact": "Contact",
       "nav_apply": "Apply Now",
 
+      "course_meta_price_title": "Tuition Fee",
+      "course_price_subtitle": "Flexible payment options available",
+
+      "course_computer_architecture_price": "50,000 AMD / month",
+      "course_javascript_price": "60,000 AMD / month",
+      "course_devhack_price": "60,000 AMD / month",
+      "course_embedded_price": "50,000 AMD / month",
+      "course_ai_price": "60,000 AMD / month",
+      "course_software_price": "60,000 AMD / month",
+      "course_robotics_price": "60,000 AMD / month",
+      "course_mechanical_price": "50,000 AMD / month",
+      "course_microcontroller_price": "50,000 AMD / month",
+      "course_electrical_price": "60,000 AMD / month",
+      "course_compiler_price": "50,000 AMD / month",
+      "course_digital_logic_price": "50,000 AMD / month",
+      "course_fpga_price": "60,000 AMD / month",
+      "hardware_price": "50,000 AMD / month",
+      "course_mobile_price": "60,000 AMD / month",
+      "course_basic_math_price": "30,000 AMD / month",
+      "course_basic_physics_price": "30,000 AMD / month",
+      "course_probability_stats_price": "50,000 AMD / month",
+      "course_advanced_math_price": "40,000 AMD / month",
+      "course_applied_physics_price": "40,000 AMD / month",
+
 
 
 "course_meta_duration_title": "Duration",
@@ -643,7 +667,6 @@ const resources = {
 
   "course_computer_architecture_title": "Computer Architecture ",
 "course_computer_architecture_dur": "15 month",
-"course_computer_architecture_price": "45,000 AMD / month",
 "course_computer_architecture_desc": "Advanced research-level course detailing CPU microarchitecture pipeline design, hazard handling forwarding mechanism, cache coherence protocol management, hardware AI acceleration, and system level vulnerability analysis.",
 
 
@@ -855,7 +878,6 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "Advanced STM32 SoC blocks: Direct Memory Access (DMA), Low Power Modes, internal Real-Time Clock (RTC), Watchdog timers, USB controller foundations, and Controller Area Network (CAN) industrial bus protocols",
 "course_compiler_title": "Compiler Engineering",
 "course_compiler_dur": "6 weeks",
-"course_compiler_price": "60,000 AMD / month.",
 "course_compiler_desc": "Become a world-class compiler engineer. Go from computer architecture and formal grammar basics to advanced LLVM IR transformations, JIT compilation, and state-of-the-art optimizations.",
 
 "course_compiler_mod_0_title": "Module 1 — Computer Science Foundations",
@@ -910,7 +932,6 @@ const resources = {
 
       "course_electrical_title": "Electrical Engineering",
 "course_electrical_dur": "12 months",
-"course_electrical_price": "50,000 AMD / mo.",
 "course_electrical_desc": "Comprehensive program covering electrical engineering fundamentals, circuit design, power systems, industrial automation, and modern renewable energy technologies.",
 
 "course_electrical_mod_0_title": "Core Modules",
@@ -932,7 +953,6 @@ const resources = {
       "course_javascript_title": "JavaScript Engineering",
 "course_javascript_dur": "8-9 months",
 
-"course_javascript_price": "60,000 AMD / mo.",
 "course_javascript_desc": "Master modern JavaScript, from core concepts and ES6+ to advanced DOM manipulation and Web APIs. Build a strong foundation for modern web development.",
 
 "course_javascript_mod_0_title": "Module 1 — Introduction & Digital Logic Design",
@@ -1370,6 +1390,30 @@ const resources = {
       "course_meta_level_title": "Уровень",
 
 
+
+      "course_computer_architecture_price": "50 000 AMD / месяц",
+      "course_javascript_price": "60 000 AMD / месяц",
+      "course_devhack_price": "60 000 AMD / месяц",
+      "course_embedded_price": "50 000 AMD / месяц",
+      "course_ai_price": "60 000 AMD / месяц",
+      "course_software_price": "60 000 AMD / месяц",
+      "course_robotics_price": "60 000 AMD / месяц",
+      "course_mechanical_price": "50 000 AMD / месяц",
+      "course_microcontroller_price": "50 000 AMD / месяц",
+      "course_electrical_price": "60 000 AMD / месяц",
+      "course_compiler_price": "50 000 AMD / месяц",
+      "course_digital_logic_price": "50 000 AMD / месяц",
+      "course_fpga_price": "60 000 AMD / месяц",
+      "course_hardware_price": "50 000 AMD / месяц",
+      "course_mobile_price": "60 000 AMD / месяц",
+      "course_basic_math_price": "30 000 AMD / месяц",
+      "course_basic_physics_price": "30 000 AMD / месяц",
+      "course_probability_stats_price": "50 000 AMD / месяц",
+      "course_advanced_math_price": "40 000 AMD / месяц",
+      "course_applied_physics_price": "40 000 AMD / месяц",
+
+"course_meta_price_title": "Стоимость обучения",
+      "course_price_subtitle": "Доступна гибкая система оплаты",
       "course_weekly_frequency": "3-6 раз в неделю",
 
       // 1. Computer Architecture
@@ -1990,7 +2034,6 @@ const resources = {
   "course_devHack_mod_3_topic_5": "Основы управления инцидентами и продвинутое отслеживание реагирования на инциденты",
   "course_computer_architecture_title": "Архитектура компьютера",
   "course_computer_architecture_dur": "15 месяцев",
-  "course_computer_architecture_price": "45 000 драм / месяц",
   "course_computer_architecture_desc": "Продвинутый курс исследовательского уровня, детально описывающий проектирование конвейера микроархитектуры CPU, механизмы обработки опасностей (hazards), управление протоколами когерентности кэша, аппаратное ускорение ИИ и анализ уязвимостей на системном уровне.",
 
   "course_computer_architecture_mod_0_title": "Модуль 1 — Цифровые основы и двоичная математика",
@@ -2054,7 +2097,6 @@ const resources = {
 
 "course_hardware_title": "аппаратная инженерия (Hardware Engineering)",
 "course_hardware_dur": "8 месяц",
-"course_hardware_price": "45,000 AMD / месяц",
 "course_hardware_desc": "Освойте полный цикл проектирования аппаратного обеспечения. От базовой инженерной математики и физики до разводки многослойной печатной платы, программирования FPGA на языке HDL, проектирования высокоскоростной цифровой схемы и интеграции встроенной системы.",
 
 "course_hardware_mod_0_title": "Модуль 1 — База инженерной математики и физики",
@@ -2199,7 +2241,6 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "Сложные блоки SoC STM32: прямой доступ к памяти (DMA), режимы пониженного энергопотребления (Low Power), внутренние часы реального времени (RTC), сторожевые таймеры (Watchdog), основы USB-контроллеров и промышленная шина CAN",
 "course_compiler_title": "Проектирование компиляторов (Compiler Engineering)",
 "course_compiler_dur": "6 недель",
-"course_compiler_price": "60,000 AMD / мес.",
 "course_compiler_desc": "Станьте инженером компиляторов мирового уровня. Пройдите путь от архитектуры компьютера и основ формальных грамматик до продвинутых преобразований LLVM IR, JIT-компиляции и ультрасовременных оптимизаций.",
 
 "course_compiler_mod_0_title": "Модуль 1 — Основы компьютерных наук",
@@ -2254,7 +2295,6 @@ const resources = {
 
 "course_electrical_title": "Электротехника (Electrical Engineering)",
 "course_electrical_dur": "12 месяцев",
-"course_electrical_price": "50,000 AMD / мес.",
 "course_electrical_desc": "Комплексная программа, охватывающая основы электротехники, проектирование схем, силовую электронику, промышленную автоматизацию и современные технологии возобновляемой энергии.",
 
 "course_electrical_mod_0_title": "Основной модуль (Core Modules)",
@@ -2722,8 +2762,31 @@ const resources = {
       "nav_programs": "Ծրագրեր",
       "nav_projects": "Նախագծեր",
 
+"course_meta_price_title": "Ուսման վարձ",
+"course_price_subtitle": "Առկա են վճարման ճկուն տարբերակներ",
 
 
+
+      "course_computer_architecture_price": "50,000 AMD / ամսական",
+      "course_javascript_price": "60,000 AMD / ամսական",
+      "course_devhack_price": "60,000 AMD / ամսական",
+      "course_embedded_price": "50,000 AMD / ամսական",
+      "course_ai_price": "60,000 AMD / ամսական",
+      "course_software_price": "60,000 AMD / ամսական",
+      "course_robotics_price": "60,000 AMD / ամսական",
+      "course_mechanical_price": "50,000 AMD / ամսական",
+      "course_microcontroller_price": "50,000 AMD / ամսական",
+      "course_electrical_price": "60,000 AMD / ամսական",
+      "course_compiler_price": "50,000 AMD / ամսական",
+      "course_digital_logic_price": "50,000 AMD / ամսական",
+      "course_fpga_price": "60,000 AMD / ամսական",
+      "course_hardware_price": "50,000 AMD / ամսական",
+      "course_mobile_price": "60,000 AMD / ամսական",
+      "course_basic_math_price": "30,000 AMD / ամսական",
+      "course_basic_physics_price": "30,000 AMD / ամսական",
+      "course_probability_stats_price": "50,000 AMD / ամսական",
+      "course_advanced_math_price": "40,000 AMD / ամսական",
+      "course_applied_physics_price": "40,000 AMD / ամսական",
 
 "course_meta_duration_title": "Տևողությունը",
       "course_meta_level_title": "Բարդության մակարդակ",
@@ -3343,7 +3406,6 @@ const resources = {
   "course_devHack_mod_3_topic_5": "Միջադեպերի կառավարման հիմունքներ և միջադեպերին արձագանքման առաջադեմ հետևում",
 "course_computer_architecture_title": "Համակարգչային ճարտարապետություն",
   "course_computer_architecture_dur": "15 ամիս",
-  "course_computer_architecture_price": "45,000 դրամ / ամիս",
   "course_computer_architecture_desc": "Առաջադեմ հետազոտական մակարդակի դասընթաց, որը մանրամասնում է CPU-ի միկրոճարտարապետության կոնվեյերի նախագծումը, վտանգների (hazards) մշակման մեխանիզմը, քեշի կոհերենտության արձանագրությունների կառավարումը, AI սարքային արագացումը և համակարգային մակարդակի խոցելիության վերլուծությունը։",
 
   "course_computer_architecture_mod_0_title": "Մոդուլ 1 — Թվային հիմունքներ և երկուական մաթեմատիկա",
@@ -3407,7 +3469,6 @@ const resources = {
 
       "course_hardware_title": "Ապարատային ճարտարագիտության (Hardware Engineering)",
 "course_hardware_dur": "8 ամիս",
-"course_hardware_price": "45,000 AMD / ամիս",
 "course_hardware_desc": "Տիրապետեք ապարատային նախագծման ամբողջական ցիկլին: Մաթեմատիկայի և ֆիզիկայի հիմնական օրենքից մինչև բազմաշերտ տպատախտակի (PCB) տեղադրում, FPGA ծրագրավորում HDL լեզվով, բարձր արագության թվային սխեմայի նախագծում և ներդրված համակարգի ինտեգրում:",
 
 "course_hardware_mod_0_title": "Մոդուլ 1 — Ճարտարագիտական մաթեմատիկայի և ֆիզիկայի հիմք",
@@ -3472,7 +3533,6 @@ const resources = {
 "course_hardware_mod_8_topic_2": "Ապարատային ստուգում. առաջադեմ ազդանշանի ամբողջականություն, սնուցման ամբողջականության մոդելավորում և բազմաալիք ժամանակային վերլուծություն [cite: 548, 549, 550]",
      "course_microcontroller_title": "Միկրոկոնտրոլերի հիմունք (Microcontroller Fundamental)",
 "course_microcontroller_dur": "6-8 ամիս",
-"course_microcontroller_price": "45,000 AMD / ամիս",
 "course_microcontroller_desc": "Տիրապետեք ներդրված համակարգի (embedded system) մշակման հիմունքին: Ուսումնասիրեք միկրոկոնտրոլերի ճարտարապետությունը, թվային տրամաբանությունը, ցածր մակարդակի (bare-metal) C ծրագրավորումը, ծայրամասային սարքի փոխազդեցությունը և այնպիսի առաջատար թեմա, ինչպիսիք են RTOS-ը, DMA-ը և արդյունաբերական արձանագրությունը՝ STM32 սարքավորման բազայի վրա:",
 
 "course_microcontroller_mod_0_title": "Մոդուլ 1 — Ներածություն միկրոկոնտրոլերին",
@@ -3550,12 +3610,10 @@ const resources = {
 "course_microcontroller_mod_14_topic_2": "STM32 SoC-ի առաջատար բլոկ. հիշողության ուղիղ հասանելիություն (DMA), էներգախնայողության ռեժիմ (Low Power), իրական ժամանակի ներքին ժամացույց (RTC), հսկիչ թայմեր (Watchdog), USB կոնտրոլերի հիմունք և արդյունաբերական CAN դող",
 "course_electrical_title": "Էլեկտրատեխնիկա (Electrical Engineering)",
 "course_electrical_dur": "12 ամիս",
-"course_electrical_price": "50,000 AMD / ամիս",
 "course_electrical_desc": "Համապարփակ ծրագիր, որն ընդգրկում է էլեկտրատեխնիկայի հիմունքները, սխեմաների նախագծումը, ուժային էլեկտրոնիկան, արդյունաբերական ավտոմատացումը և վերականգնվող էներգիայի ժամանակակից տեխնոլոգիաները.",
 
 "course_compiler_title": "Կոմպիլյատորների նախագծում (Compiler Engineering)",
 "course_compiler_dur": "6 շաբաթ",
-"course_compiler_price": "60,000 AMD / ամիս",
 "course_compiler_desc": "Դարձեք համաշխարհային մակարդակի կոմպիլյատորների ինժեներ: Անցեք ուղի համակարգչային ճարտարապետությունից և ֆորմալ քերականություններից մինչև LLVM IR տրանսֆորմացիաներ, JIT կոմպիլյացիա և առաջատար օպտիմալացումներ:",
 
 "course_compiler_mod_0_title": "Մոդուլ 1 — Համակարգչային գիտությունների հիմունքներ",
